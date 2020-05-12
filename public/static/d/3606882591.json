@@ -1,1 +1,0 @@
-{"errors":[{"message":"width has to be a positive int larger than zero (> 0), now it's 0","locations":[{"line":14,"column":7}],"path":["file","childImageSharp","fixed"]}],"data":{"file":{"id":"92bd09af-abe6-5a6f-8b60-a90508a33315","childImageSharp":{"id":"32ad22ad-5462-5458-9c5c-f9d0a6ea1dd1","fixed":null}}}}

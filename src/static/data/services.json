@@ -1,0 +1,28 @@
+{
+    "web": {
+        "status": "enabled",
+        "tag": "etiqueta",
+        "description": "Servicios web para empresas",
+        "submenu": [
+            {
+                "status": "enabled",
+                "tag": "etiqueta",
+                "title": "Página web",
+                "description": "Presencia en internet.",
+                "icon": "desktop-mac",
+                "link": "paginas-web",
+                "submenu": [{
+                    "title": "código",
+                    "link": "html5"
+                }]
+            }
+        ],
+        "banner": {
+            "status": "enabled",
+            "tag": "etiqueta",
+            "title": "Página web",
+            "description": "Presencia en internet.",
+            "link": "promocion-paginas-web"
+        }
+    }
+}

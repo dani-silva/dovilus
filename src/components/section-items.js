@@ -2,19 +2,25 @@ import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
-const Section = ({content}) => {
-    console.log(content)
+const Items = ({content}) => {
+    // console.log(content)
     return(
-        <section className="container pt-5">
+        <div className="container pt-5">
             <div className="row">
                 {
                     content.map((item, i) => {
                         return (
                             <div key={i} className="col-lg-4 col-md-6 d-flex flex-column justify-content-center pb-5">
-                                <span className="tag">{item.tag}</span>
-                                <h4 className="text-dark pb-3">{item.title}</h4>
+                                { item.tag != "" ? <h4 className="text-dark tag">{item.tag}</h4> : null }
+                                <h5 className="pb-3">{item.title}</h5>
                                 <p>{item.paragraph}</p>
-                                <Link to={item.link}>Go to page 2</Link>
+                                {
+                                    item.link
+                                    ?
+                                        <Link to={item.link.to} className="btn text-primary mr-auto px-0">{item.link.name} <i className="mdi mdi-chevron-right"></i></Link>
+                                    :
+                                        null
+                                }
                             </div>
                         )
                     })
@@ -32,21 +38,20 @@ const Section = ({content}) => {
                     <Link to={link}>Go to page 2</Link>
                 </div> */}
             </div>
-        </section>
+        </div>
     )
 }
 
-Section.propTypes = {
+Items.propTypes = {
     content: PropTypes.array
 }
   
-Section.defaultProps = {
+Items.defaultProps = {
     content: [{
-        tag: "Etiqueta",
+        tag: "",
         title: "Titulo",
         paragraph: "Parrafo",
-        link: "/"
     }]
 }
 
-export default Section
+export default Items
