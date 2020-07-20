@@ -4,7 +4,7 @@ import React from "react"
 
 const Footer = ({ metaData }) => (
     <footer className="bg-light border-top">
-      <div className="container">
+      <div className="container-lg">
         <div className="row py-5">
           <div className="col-lg-4 col-md-12 pb-5">
               <h4 className="text-dark pb-1 brand">{metaData.title}</h4>
@@ -43,7 +43,7 @@ const Footer = ({ metaData }) => (
         </div>
       </div>
       <div className="bg-primary">
-        <div className="container">
+        <div className="container-lg">
           <div className="row">
             <div className="py-3 col-md-6 d-flex align-items-center text-white small justify-content-center justify-content-md-start">
               <span className="brand">{new Date().getFullYear()} © {metaData.title} </span>

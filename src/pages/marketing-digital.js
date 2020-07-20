@@ -8,6 +8,7 @@ import SEO from "../components/seo"
 import Carousel from "../components/carousel"
 import SectionImage from "../components/section-image"
 import SectionItems from "../components/section-items"
+import BreadCrumbs from "../components/breadcrumbs"
 
 const MarketingDigital = () => {
 
@@ -52,7 +53,7 @@ const MarketingDigital = () => {
         <SEO title="Marketing Digital" />
 
         <section className="m-1 bg-gradient rounded" style={{overflow: 'visible'}}>
-          <div className="container">
+          <div className="container-lg">
             <div className="row">
                 <div className="py-5 col-md-6 d-flex flex-column align-items-start justify-content-center">
                     <h3 className="tag text-light">Marketing Digital</h3>
@@ -77,12 +78,8 @@ const MarketingDigital = () => {
           
         </section>
 
-        <section className="container">
-          <ul className="d-flex mt-3 mb-2">
-            <li><Link to="/" className="btn text-dark">Inicio</Link><i className="mdi mdi-chevron-right text-dark"></i></li>
-            <li className="btn text-dark disabled">Marketing Digital</li>
-          </ul>
-        </section>
+        <BreadCrumbs list={[{name: 'Marketing Digital'}]} />
+
         <SectionImage 
             tag="Certificado SSL"
             title="Dale seguridad a tu página y confianza a tus clientes. "
@@ -93,17 +90,17 @@ const MarketingDigital = () => {
         />
 
         <section className="my-5 py-5 bg-primary">
-          <div className="container">
-            <div className="px-5 py-5 d-flex flex-column align-items-center text-white">
+          <div className="container-lg">
+            <div className="py-5 d-flex flex-column align-items-center text-white">
               <span className="tag">Nuestro propósito</span>
-              <h2 className=" pb-2 text-center text-center">Ayudar a los dueños de negocio de <span className="text-success">Mé</span><span className="text-white">xi</span><span className="text-danger">co</span> a crecer en internet</h2>
+              <h2 className="pb-4 text-center text-white">Ayudar a los dueños de negocio de <span className="text-success">Mé</span><span className="text-white">xi</span><span className="text-danger">co</span> a crecer en internet</h2>
               <p className="text-center">Si aun no haz iniciado la aventurado de vender por internet, nosotros de queremos ayudar a que lo hagas de manera segura, rápida y económica para que tú misión sea dar el mejor servicio a tus clientes.</p>
-              <Link to="contacto" className="btn rounded-pill btn-light mt-4">Contactar Ahora</Link>
+              <Link to="contacto" className="btn rounded btn-light mt-5">Contactar Ahora</Link>
             </div>
           </div>
         </section>
 
-        <section className="container py-5">
+        <section className="container-lg py-5">
             <div className="row">
             <div className="mb-5 d-flex flex-column align-items-center">
                 <span className="tag">Preguntas frecuentes</span>

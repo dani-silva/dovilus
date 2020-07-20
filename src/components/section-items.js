@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 const Items = ({content}) => {
     // console.log(content)
     return(
-        <div className="container pt-5">
+        <div className="pt-5">
             <div className="row">
                 {
                     content.map((item, i) => {

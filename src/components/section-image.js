@@ -5,9 +5,9 @@ import PropTypes from "prop-types"
 const SectionImage = ({tag, title, paragraph, src, link, reverse, list}) => {
 
     return(
-        <section className="container py-5 my-5">
+        <section className="container-lg py-5 my-5">
             <div className={`row ${reverse ? "flex-row-reverse" : ""}`}>
-                <div className="col-lg-5 col-md-8 col-sm-12 d-flex flex-column justify-content-center align-items-start">
+                <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
                     <h6 className="tag">{tag}</h6>
                     <h3 className="text-primary pb-3">{title}</h3>
                     {
@@ -38,8 +38,8 @@ const SectionImage = ({tag, title, paragraph, src, link, reverse, list}) => {
                         : null
                     }
                 </div>
-                <div className="d-none d-lg-block col-lg-1"></div>
-                <div className="col-lg-6 col-md-4 col-sm-12 d-flex flex-column justify-content-center slideInUp animated">
+                {/* <div className="d-none d-lg-block col-lg-1"></div> */}
+                <div className="col-lg-6 col-md-5 col-sm-12 d-flex flex-column justify-content-center slideInUp animated">
                     {src}
                 </div>
             </div>

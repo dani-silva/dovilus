@@ -8,53 +8,84 @@ import SEO from "../components/seo"
 import Carousel from "../components/carousel"
 import SectionImage from "../components/section-image"
 import SectionItems from "../components/section-items"
+import BreadCrumbs from "../components/breadcrumbs"
 
 const Web = () => {
 
   const data = useStaticQuery(graphql`
     query {
-        image: file(relativePath: { eq: "pagina-web/tablet.png" }) {
-          childImageSharp {
-            fluid(quality: 75) {
-                ...GatsbyImageSharpFluid
-            }
-            fixed(width: 434, height: 658) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        laptop: file(relativePath: { eq: "pagina-web/laptop.png" }) {
-          childImageSharp {
-            fluid(quality: 75) {
-                ...GatsbyImageSharpFluid
-            }
-            fixed(width: 588, height: 400) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        selva: file(relativePath: { eq: "carousel/selva.jpg" }) {
-          childImageSharp {
-            fluid(quality: 100) {
+      shop: file(relativePath: { eq: "pagina-web/shop.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
               ...GatsbyImageSharpFluid
-            }
-            fixed(height: 200) {
-              ...GatsbyImageSharpFixed
-            }
           }
-        }
-        service: file(relativePath: { eq: "carousel/first.jpg" }) {
-          childImageSharp {
-            fluid(maxHeight: 200, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-            fixed(height: 200) {
-              ...GatsbyImageSharpFixed
-            }
+          fixed(width: 434, height: 658) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-    `)
+      open: file(relativePath: { eq: "pagina-web/open.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 434, height: 658) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      coffee: file(relativePath: { eq: "pagina-web/coffee.jpg" }) {
+        childImageSharp {
+          fluid(quality: 80) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 434, height: 658) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      pay: file(relativePath: { eq: "ecommerce/pay.jpg" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 434, height: 658) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      laptop: file(relativePath: { eq: "pagina-web/laptop.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 588, height: 400) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      graphic: file(relativePath: { eq: "ecommerce/graphic.jpg" }) {
+        childImageSharp {
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+          fixed(height: 200) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      service: file(relativePath: { eq: "carousel/first.jpg" }) {
+        childImageSharp {
+          fluid(maxHeight: 200, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+          fixed(height: 200) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
 
   return(
 
@@ -62,7 +93,7 @@ const Web = () => {
         <SEO title="Servicios Web" />
 
         <section className="m-1 bg-gradient rounded" style={{overflow: 'visible'}}>
-          <div className="container">
+          <div className="container-lg">
             <div className="row">
                 <div className="py-5 col-md-6 d-flex flex-column align-items-start justify-content-center">
                     <h3 className="tag text-light">Servicios web</h3>
@@ -72,13 +103,69 @@ const Web = () => {
                 </div>
                 <div className="col-md-6 d-flex align-items-end justify-content-center">
                     <div className="row mt-4 w-100">
-                        <div className="col-6">
-                            <Img fluid={data.service.childImageSharp.fluid} className="mb-4 rounded" />
-                            <Img fluid={data.service.childImageSharp.fluid} className="mb-4 rounded" />
+                        <div className="col-6" style={{transform: 'translate(0px, 40px)'}}>
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                              <div className="rounded overflow-hidden">
+                                <Img fluid={data.open.childImageSharp.fluid} />
+                              </div>
+                              <div className="d-flex bg-hidden flex-column align-items-start justify-content-between p-2 position-absolute w-100 h-100" style={{zIndex: '10', top: '0px', left: '0px'}}>
+                                <small className={`badge badge-light`} >Ecommerce</small>
+                                <p className="d-none text-left text-white small m-0">Texto de relleno para enviar al usuario a la seccion</p>
+                              </div> 
+                            </Link>
+
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                              <div className="rounded overflow-hidden">
+                                <Img fluid={data.shop.childImageSharp.fluid} />
+                              </div>
+                              <div className="d-flex bg-hidden flex-column align-items-start justify-content-between p-2 position-absolute w-100 h-100" style={{zIndex: '10', top: '0px', left: '0px'}}>
+                                <small className={`badge badge-light`} >Ecommerce</small>
+                                <p className="d-none text-left text-white small m-0">Texto de relleno para enviar al usuario a la seccion</p>
+                              </div> 
+                            </Link>
+
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                              <div className="rounded overflow-hidden">
+                                <Img fluid={data.coffee.childImageSharp.fluid} />
+                              </div>
+                              <div className="d-flex bg-hidden flex-column align-items-start justify-content-between p-2 position-absolute w-100 h-100" style={{zIndex: '10', top: '0px', left: '0px'}}>
+                                <small className={`badge badge-light`} >Ecommerce</small>
+                                <p className="d-none text-left text-white small m-0">Texto de relleno para enviar al usuario a la seccion</p>
+                              </div> 
+                            </Link>
+                            {/* <Img fluid={data.open.childImageSharp.fluid} className="mb-4 rounded shadow" /> */}
                         </div>
                         <div className="col-6" style={{transform: 'translate(0px, 80px)'}}>
-                            <Img fluid={data.service.childImageSharp.fluid} className="mb-4 rounded" />
-                            <Img fluid={data.service.childImageSharp.fluid} className="mb-4 rounded" />
+
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                              <div className="rounded overflow-hidden">
+                                <Img fluid={data.service.childImageSharp.fluid} />
+                              </div>
+                              <div className="d-flex bg-hidden flex-column align-items-start justify-content-between p-2 position-absolute w-100 h-100" style={{zIndex: '10', top: '0px', left: '0px'}}>
+                                <small className={`badge badge-light`} >Ecommerce</small>
+                                <p className="d-none text-left text-white small m-0">Texto de relleno para enviar al usuario a la seccion</p>
+                              </div> 
+                            </Link>
+
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                              <div className="rounded overflow-hidden">
+                                <Img fluid={data.graphic.childImageSharp.fluid} />
+                              </div>
+                              <div className="d-flex bg-hidden flex-column align-items-start justify-content-between p-2 position-absolute w-100 h-100" style={{zIndex: '10', top: '0px', left: '0px'}}>
+                                <small className={`badge badge-light`} >Datos estrategicos</small>
+                                <p className="d-none text-left text-white small m-0">Texto de relleno para enviar al usuario a la seccion</p>
+                              </div>
+                            </Link>
+
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                              <div className="rounded overflow-hidden">
+                                <Img fluid={data.pay.childImageSharp.fluid} />
+                              </div>
+                              <div className="d-flex bg-hidden flex-column align-items-start justify-content-between p-2 position-absolute w-100 h-100" style={{zIndex: '10', top: '0px', left: '0px'}}>
+                                <small className={`badge badge-light`} >Recibe pagos</small>
+                                <p className="d-none text-left text-white small m-0">Texto de relleno para enviar al usuario a la seccion</p>
+                              </div> 
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -86,12 +173,11 @@ const Web = () => {
           </div>
         </section>
 
-        <section className="container">
-          <ul className="d-flex mt-3 mb-2">
-            <li><Link to="/" className="btn text-dark">Inicio</Link><i className="mdi mdi-chevron-right text-dark"></i></li>
-            <li className="btn text-dark disabled">Web</li>
-          </ul>
-        </section>
+        <BreadCrumbs 
+          list={[
+            {name: 'Web'}
+          ]}
+        />
 
         <SectionImage 
             tag="Certificado SSL"
@@ -102,16 +188,16 @@ const Web = () => {
             reverse={true}
         />
 
-        <section className="container py-5">
+        <section className="container-lg py-5">
           <div className="row py-5">
-            <div className="col-lg-3 col-sm-12">
-              <h2 className="text-muted border-right border-primary tag my-2 pb-3">Herramientas digitales</h2>
+            <div className="col-lg-2 col-sm-12">
+              <h2 className="text-muted border-right-lg border-primary my-2 pb-3 tag">Herramientas digitales</h2>
             </div>
-            <div className="col-lg-9 col-sm-12">
+            <div className="col-lg-10 col-sm-12">
               <h3>Supera los retos del mundo con herramientas digitales que mejoran resultados</h3>
               <figure className="figure d-block mt-4 mb-5">
                 {/* <img src="..." className="figure-img img-fluid rounded" alt="..."> */}
-                <Img fluid={data.selva.childImageSharp.fluid} className="figure-img img-fluid max-height-300 rounded" alt="Páwgina web" />
+                <Img fluid={data.pay.childImageSharp.fluid} className="figure-img img-fluid max-height-300 rounded" alt="Páwgina web" />
                 <figcaption className="figure-caption text-right">Aventuras que cambian la vida</figcaption>
               </figure>
               <div className="row">
@@ -146,18 +232,18 @@ const Web = () => {
           </div>
         </section>
 
-        <section className="my-5 py-5 bg-primary">
-          <div className="container">
-            <div className="px-5 py-5 d-flex flex-column align-items-center text-white">
+        <section className="my-5 py-5 bg-primary rounded m-1">
+          <div className="container-lg">
+            <div className="py-5 d-flex flex-column align-items-center text-white">
               <span className="tag">Nuestro propósito</span>
               <h2 className="pb-2 text-center text-light">Ayudar a los dueños de negocio de <span className="text-success">Mé</span><span className="text-white">xi</span><span className="text-danger">co</span> a crecer en internet</h2>
               <p className="text-center">Si aun no haz iniciado la aventurado de vender por internet, nosotros de queremos ayudar a que lo hagas de manera segura, rápida y económica para que tú misión sea dar el mejor servicio a tus clientes.</p>
-              <Link to="contacto" className="btn rounded-pill btn-light mt-4">Contactar Ahora</Link>
+              <Link to="contacto" className="btn btn-light mt-4">Contactar Ahora</Link>
             </div>
           </div>
         </section>
 
-        <section className="container py-5">
+        <section className="container-lg py-5">
             <div className="row">
             <div className="mb-5 d-flex flex-column align-items-center">
                 <span className="tag">Preguntas frecuentes</span>

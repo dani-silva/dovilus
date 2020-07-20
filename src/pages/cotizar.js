@@ -8,7 +8,7 @@ const Cotizar = () => (
   <Layout>
     <SEO title="Cotizar mi proyecto" />
     <section className="py-5">
-      <div className="container">
+      <div className="container-lg">
           <h1>Enviar formulario de cotización</h1>
           <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
           <Form />

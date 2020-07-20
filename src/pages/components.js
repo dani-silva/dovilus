@@ -88,7 +88,7 @@ const ComponentsPage = () => {
         />
       </div>
 
-      <section className="container py-5">
+      <section className="container-lg py-5">
         <div className="row py-5">
           <div className="col-lg-3 col-sm-12">
             <h2 className="text-dark border-right border-primary tag my-2">Servicios Web</h2>
@@ -132,7 +132,7 @@ const ComponentsPage = () => {
         </div>
       </section>
 
-      <section className="section container">
+      <section className="section container-lg">
         <div className="row">
           <div className="col-3">
             <Img fluid={data.shop.childImageSharp.fluid} className="rounded w-100 mt-2" alt="Siempre abierto" />
@@ -162,7 +162,7 @@ const ComponentsPage = () => {
       />
       {/* <Img fluid={data.image.childImageSharp.fluid} alt="" /> */}
 
-      <section className="container">
+      <section className="container-lg">
         <div className="row py-5">
           <div className="col-lg-4 col-md-6 d-flex flex-column align-items-start">
             {/* <Img fluid={data.service.childImageSharp.fluid} className="" alt="" /> */}
@@ -194,7 +194,7 @@ const ComponentsPage = () => {
         </div>
       </section>
 
-      <section className="container my-5 py-5 bg-gradient rounded">
+      <section className="container-lg my-5 py-5 bg-gradient rounded">
         <div className="px-5 py-5 d-flex flex-column align-items-center text-white">
           <span className="tag">Páginas Web</span>
           <h2 className=" pb-3 text-center text-center">Muestra a los compradores en línea que eres local y que estás orgulloso de serlo.</h2>
@@ -204,7 +204,7 @@ const ComponentsPage = () => {
       </section>
 
       <section className="my-5 py-5 bg-gradient">
-        <div className="container">
+        <div className="container-lg">
           <div className="px-5 py-5 d-flex flex-column align-items-center text-white">
             <span className="tag">Páginas Web</span>
             <h2 className=" pb-3 text-center text-center">Muestra a los compradores en línea que eres local y que estás orgulloso de serlo.</h2>
@@ -214,7 +214,7 @@ const ComponentsPage = () => {
         </div>
       </section>
 
-      <section className="container my-5 py-5 bg-dark rounded">
+      <section className="container-lg my-5 py-5 bg-dark rounded">
         <div className="row">
           <div className="col-12 col-md-6 px-5 py-5 d-flex flex-column align-items-start text-white">
             <span className="tag">Páginas Web</span>
@@ -236,7 +236,7 @@ const ComponentsPage = () => {
         </div>
       </section>
 
-      <section className="container my-5 bg-primary rounded">
+      <section className="container-lg my-5 bg-primary rounded">
         <div className="d-flex flex-row">
           <div className="p-5 col-md-6 d-flex flex-column justify-content-center">
             <h3 className="tag text-light">Páginas Web</h3>
@@ -283,7 +283,7 @@ const ComponentsPage = () => {
         ]}
       />
 
-      <section className="container py-5">
+      <section className="container-lg py-5">
         <div className="row">
           <div className="mb-5 d-flex flex-column align-items-center">
             <span className="tag">Preguntas frecuentes</span>
