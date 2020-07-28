@@ -3,7 +3,7 @@ import React from "react"
 import {Link} from 'gatsby'
 
 const BreadCrumbs = (props) => (
-    <section className="container-lg text-muted">
+    <section className="text-muted">
         <ul className="d-flex mt-2 mb-2">
             <li><Link to="/" className="btn text-dark">Inicio</Link><i className="small mdi mdi-chevron-right text-dark"></i></li>
             {

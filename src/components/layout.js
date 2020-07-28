@@ -26,14 +26,14 @@ const Layout = ({ children, afterHeader }) => {
   // console.log(location)
 
   return (
-    <div>
+    <>
       {afterHeader}
       <Header siteTitle={data.site.siteMetadata.title} />
       
-      <main className="section">{children}</main>
+      <main>{children}</main>
 
       <Footer metaData={data.site.siteMetadata} />
-    </div>
+    </>
   )
 }
 

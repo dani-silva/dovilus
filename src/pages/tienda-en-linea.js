@@ -41,7 +41,7 @@ const Ecommerce = () => {
             }
           }
         }
-        laptopR: file(relativePath: { eq: "pagina-web/laptop-r.png" }) {
+        laptopR: file(relativePath: { eq: "ecommerce/laptop.png" }) {
           childImageSharp {
             fluid(quality: 90) {
                 ...GatsbyImageSharpFluid
@@ -91,7 +91,7 @@ const Ecommerce = () => {
             }
           }
         }
-        beneficios: file(relativePath: { eq: "ecommerce/plus.png" }) {
+        beneficios: file(relativePath: { eq: "ecommerce/results.png" }) {
           childImageSharp {
             fluid(quality: 80) {
                 ...GatsbyImageSharpFluid
@@ -108,34 +108,85 @@ const Ecommerce = () => {
 
     <Layout>
       <SEO title="Tienda en Linea" />
+      <section className="px-1 pb-5">
+        <div className="rounded bg-gradient">
+          <div className="container-lg">
+            <div className="row py-3">
+              <div className="col-12 col-md-6 d-flex flex-column justify-content-center p-4 text-center text-md-left">
+                <h2 className="tag text-light">Tienda online</h2>
+                <h1 className="text-light">Comienza tu negocio en internet y aumenta las ventas</h1>
+              </div>
+              <div className="col-12 col-md-6">
+                <div className="" style={{transform: "translate(0px, 90px)"}}>
+                  <Img fluid={data.laptopR.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.4)"}} alt="Páwgina web" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="mt-5 mt-md-0">
 
-      <section className="m-1 py-5 bg-gradient rounded">
+          <BreadCumbs list={[{name:'Web', to:'web'}, {name: 'Tienda en Linea'}]} />
+        </div>
+
+        {/* <div className="container">
+          <div className="row">
+            <div className="col-6 py-5">
+              <p className="mb-5">Una tienda en linea es una herramienta digital que da muchas ventajas a tu negocio.</p>
+              
+                <small className="form-text mb-2">Ingresa tu correo para iniciar una cotización.</small>
+                <form onSubmit={() => console.log('enviar')} className="w-75" >
+                  <div className="form-group d-flex">
+                    <input type="email" className="form-control mr-2" placeholder="mi.correo@example.com" required />
+                    <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-arrow-right"></i></button>
+                  </div>
+                </form>
+            </div>
+            <div className="col-6">
+              <div className="" style={{transform: "translate(0px, -300px)"}}>
+                <Img fluid={data.laptopR.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.4)"}} alt="Páwgina web" />
+              </div>
+            </div>
+          </div>
+        </div> */}
+      </section>
+
+      {/* <section className="m-1 py-5 bg-gradient rounded">
         <div className="container-lg">
           <div className="row">
             <div className="col-12 col-md-6 d-flex flex-column align-items-start justify-content-center text-white">
-              <h2 className="tag text-light">Tienda en linea</h2>
-              <h1 className="pb-3 text-light">E-commerce para llegar y vender a todo lugar a cualquier hora</h1>
+              <h2 className="tag text-light">Tienda online</h2>
+              <h1 className="pb-3 text-light">Comienza tu negocio en internet y aumenta las ventas</h1>
               <p className="mb-5">Una tienda en linea es una herramienta digital que da muchas ventajas a tu negocio.</p>
-              {/* <Link to="paginas-web" className="btn rounded-pill btn-light">Go to page 2</Link> */}
-              <small className="form-text text-light mb-2">Ingresa tu correo para iniciar una cotización.</small>
+              <Link to="paginas-web" className="btn rounded-pill btn-light">Go to page 2</Link>
+              
+              <small className="form-text mb-2">Ingresa tu correo para iniciar una cotización.</small>
               <form onSubmit={() => console.log('enviar')} className="w-75" >
                 <div className="form-group d-flex">
-                  {/* <label for="exampleInputEmail1">Email address</label> */}
+                  <label for="exampleInputEmail1">Email address</label>
                   <input type="email" className="form-control mr-2" placeholder="mi.correo@example.com" required />
                   <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-arrow-right"></i></button>
                 </div>
               </form>
             </div>
             <div className="col-12 col-md-6 d-none d-md-block">
-              <Img fluid={data.laptopR.childImageSharp.fluid} alt="Páwgina web" />
+              <Img fluid={data.laptopR.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.3)"}} alt="Páwgina web" />
             </div>
           </div>
         </div>
+      </section> */}
+
+
+      {/* <BreadCumbs list={[{name:'Web', to:'web'}, {name: 'Tienda en Linea'}]} /> */}
+
+      <section className="container-lg mt-5 pt-5 overflow-visible">
+        <div className="text-center">
+          <h2 className="text-primary">Ganale a tu competencia.</h2>
+          <p>Una vision sin un plan es solo un sueño, crea tu plan y actua ahora.</p>
+        </div>
       </section>
 
-      <BreadCumbs list={[{name:'Web', to:'web'}, {name: 'Tienda en Linea'}]} />
-
-      <section className="container-lg py-5 my-5">
+      <section className="px-5 px-md-3 container-lg py-5 my-5">
         <div className="row flex-row-reverse">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
@@ -150,11 +201,11 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      <section className="container-lg py-5 my-5">
+      <section className="px-5 px-md-3 container-lg py-5 my-5">
         <div className="row">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
-              <h3 className="text-primary pb-3">En internet los horarios te atencion y ventas son cosa del pasado.</h3>
+              <h3 className="text-primary pb-3">En internet los horarios son cosa del pasado.</h3>
               <p>Una página web despeja dudas y genera confianza a las personas, convenciéndolas de obtener el producto o servicio, aumentando tu competitividad sobre la competencia, generando ventas y oportunidades de negocio.</p>
             </div>
             {/* <div className="d-none d-lg-block col-lg-1"></div> */}
@@ -164,7 +215,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      <section className="container-lg py-5 my-5">
+      <section className="px-5 px-md-3 container-lg py-5 my-5">
         <div className="row flex-row-reverse">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
@@ -185,7 +236,7 @@ const Ecommerce = () => {
                   <Img fixed={data.calendar.childImageSharp.fixed} className="rounded" alt="Siempre abierto" />
                 </div>
                 <div className="">
-                  <h3 className="h5 text-dark mb-2">Agenda citas</h3>
+                  <h3 className="h5 text-dark mb-2">Agendar citas 24/7</h3>
                   <p className="text-muted">Los clientes modernos cuentan con herramientas digitales que remplazan las actividades cotidianas.</p>
                 </div>
               </div>
@@ -195,7 +246,7 @@ const Ecommerce = () => {
                   <Img fixed={data.sms.childImageSharp.fixed} className="rounded" alt="Siempre abierto" />
                 </div>
                 <div className="">
-                  <h3 className="h5 text-dark mb-2">Comunicate en tiempo real</h3>
+                  <h3 className="h5 text-dark mb-2">Comunicación automatizada</h3>
                   <p className="text-muted">Los clientes modernos cuentan con herramientas digitales que remplazan las actividades cotidianas.</p>
                 </div>
               </div>
@@ -208,7 +259,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      <section className="container-lg">
+      <section className="px-5 px-md-3 container-lg">
         <div className="py-5 d-flex flex-column align-items-center">
           <span className="tag mb-2">Caracteristicas</span>
           <h2 className=" pb-3 text-center">Oportunidades que puedes añadir a tu sitio web para que sea una herramienta de ventas más efectiva.</h2>
@@ -234,17 +285,18 @@ const Ecommerce = () => {
             </div>
         </div>
       </section>
-
-      <section className="container-lg my-5 py-5 bg-primary rounded">
-        <div className="py-5 d-flex flex-column align-items-center text-white">
-          <h5 className="tag text-light">Blog</h5>
-          <h2 className=" mb-4 text-center text-light">Crea una comunidad y presencia en internet.</h2>
-          <p className="text-center mb-5 w-75">Estar conectado con tus clientes, que conozcan lo que tu negocio representa y les enseñes sobre ti crea comunidades solidas y presencia de marca de tu empresa.</p>
-          <Link to="/blog" className="btn rounded btn-light">Me interesa</Link>
+      <section className="px-1">
+        <div className="container-lg py-5 bg-primary rounded">
+          <div className="py-5 d-flex flex-column align-items-center">
+            <h5 className="tag text-light">Blog</h5>
+            <h2 className="mb-4 text-center text-light">Crea una comunidad y presencia en internet.</h2>
+            <p className="text-center mb-5 w-md-75">Estar conectado con tus clientes, que conozcan lo que tu negocio representa y les enseñes sobre ti crea comunidades solidas y presencia de marca de tu empresa.</p>
+            <Link to="/blog" className="btn rounded btn-light">Me interesa</Link>
+          </div>
         </div>
       </section>
 
-      <section className="container-lg py-5">
+      <section className="px-5 px-md-3 container-lg py-5">
         <div className="row">
           <div className="mb-5 d-flex flex-column align-items-center">
             <span className="tag">Preguntas frecuentes</span>
@@ -252,7 +304,7 @@ const Ecommerce = () => {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-6 col-sm-12 pb-5">
+          <div className="col-md-6 col-sm-12">
             <div className="pb-5">
               <h5 className="text-dark pb-2">Servicio 1</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lobortis cursus ut in hac sit pellentesque sed pharetra. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -262,7 +314,7 @@ const Ecommerce = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lobortis cursus ut in hac sit pellentesque sed pharetra.</p>
             </div>
           </div>
-          <div className="col-md-6 col-sm-12 pb-5">
+          <div className="col-md-6 col-sm-12">
             <div className="pb-5">
               <h5 className="text-dark pb-2">Servicio 1</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lobortis cursus ut in hac sit pellentesque sed pharetra.</p>
@@ -271,6 +323,26 @@ const Ecommerce = () => {
               <h5 className="text-dark pb-2">Servicio 1</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lobortis cursus ut in hac sit pellentesque sed pharetra.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="container py-5">
+        <div className="row">
+          <div className="col-12 col-md-6">
+            <h3 className="text-dark">
+              Empieza ahora tu sitio E-commerce solicitando tu cotización sin costo.
+            </h3>
+          </div>
+          <div className="col-12 col-md-6">
+            <small className="form-text mb-2">Ingresa tu correo para iniciar una cotización.</small>
+            <form onSubmit={() => console.log('enviar')} className="w-100" >
+              <div className="form-group input-group-lg d-flex">
+                {/* <label for="exampleInputEmail1">Email address</label> */}
+                <input type="email" className="form-control mr-2" placeholder="mi.correo@example.com" required />
+                <button type="submit" className="btn btn-primary rounded btn-lg"><i className="mdi mdi-arrow-right"></i></button>
+              </div>
+            </form>
           </div>
         </div>
       </section>

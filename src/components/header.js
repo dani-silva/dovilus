@@ -21,11 +21,13 @@ const Header = ({ siteTitle, location }) => {
   // console.log("nav status", location)
 
   return(
-    <header className="bg-white sticky-top">
+    <header className="sticky-top p-1" style={{background: "linear-gradient(0deg, rgba(255,255,255,.1), rgba(255,255,255,1))"}}>
+      <div className="d-flex align-items-center justify-content-between border bg-light rounded">
       <div className="container-lg d-flex align-items-center justify-content-between">
         <Link to="/" className="d-flex align-items-center brand">
           <Img fixed={data.file.childImageSharp.fixed} className="mr-2" alt={siteTitle} />
         </Link> 
+        
         <nav className={`nav-responsive d-flex flex-row align-items-center ml-auto d-md-block ${open ? "d-sm-block" : "d-sm-none"}`}>
           <button className="btn btn-light rounded ml-auto m-2 d-md-none d-sm-block" onClick={() => setOpen(false)}><i className="mdi mdi-window-close"> </i></button> 
           <ul className="nav">
@@ -37,11 +39,11 @@ const Header = ({ siteTitle, location }) => {
                   
                   <li>
                     <Link to="/pagina-web" activeClassName="active-link" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
+                        <div className="icon mr-3 p-2">
                             <i className="mdi mdi-desktop-mac"></i>
                         </div>
                         <div className="content">
-                            <h5 className="h6 mb-0 text-dark">
+                            <h5 className="h6 mb-1 text-dark">
                               Página web 
                               {/* <small className="badge rounded-pill badge-info small ml-1">Código </small> */}
                             </h5>
@@ -53,37 +55,37 @@ const Header = ({ siteTitle, location }) => {
                   
                   <li>
                     <Link to="/tienda-en-linea" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
+                        <div className="icon mr-3 p-2">
                             <i className="mdi mdi-basket"></i>
                         </div>
                         <div className="content">
-                            <h5 className="h6 mb-0 text-dark">Tienda en Linea</h5>
-                            <p className="mb-0 small text-muted">Descripcion corta del servicio blogging.</p>    
-                        </div>
-                        <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link to="/blog" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
-                            <i className="mdi mdi-post"></i>
-                        </div>
-                        <div className="content">
-                            <h5 className="h6 mb-0 text-dark">Blog</h5>
-                            <p className="mb-0 small text-muted">Descripcion corta del servicio blogging.</p>    
+                            <h5 className="h6 mb-1 text-dark">Tienda en Linea</h5>
+                            <p className="mb-0 small text-muted">Vende en linea con una web e-commerce.</p>    
                         </div>
                         <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
                     </Link>
                   </li>
 
                   {/* <li>
+                    <Link to="/blog" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
+                        <div className="icon mr-3 p-2">
+                            <i className="mdi mdi-post"></i>
+                        </div>
+                        <div className="content">
+                            <h5 className="h6 mb-1 text-dark">Blog</h5>
+                            <p className="mb-0 small text-muted">Descripcion corta del servicio blogging.</p>    
+                        </div>
+                        <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
+                    </Link>
+                  </li> */}
+
+                  {/* <li>
                     <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
+                        <div className="icon mr-3 p-2">
                             <i className="mdi mdi-cellphone"></i>
                         </div>
                         <div className="content">
-                            <h5 className="h6 mb-0 text-dark">Aplicaciones</h5>
+                            <h5 className="h6 mb-1 text-dark">Aplicaciones</h5>
                             <p className="mb-0 small text-muted">Aplicaiones web (PWA) o moviles Android, IOS.</p>    
                         </div>
                         <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
@@ -124,11 +126,11 @@ const Header = ({ siteTitle, location }) => {
 
                 <li>
                   <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                      <div className="icon rounded-pill mr-3 p-2">
+                      <div className="icon mr-3 p-2">
                           <i className="mdi mdi-desktop-mac"></i>
                       </div>
                       <div className="content">
-                          <h5 className="h6 mb-0 text-dark">
+                          <h5 className="h6 mb-1 text-dark">
                             Página web
                             <small className="badge rounded-pill badge-info ml-1 small">Diseño </small>
                           </h5>
@@ -140,11 +142,11 @@ const Header = ({ siteTitle, location }) => {
                 
                 <li>
                   <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                      <div className="icon rounded-pill mr-3 p-2">
+                      <div className="icon mr-3 p-2">
                           <i className="mdi mdi-pencil-ruler"></i>
                       </div>
                       <div className="content">
-                          <h5 className="h6 mb-0 text-dark">Branding</h5>
+                          <h5 className="h6 mb-1 text-dark">Branding</h5>
                           <p className="mb-0 small text-muted">Diseño de marca que de confianza y diference a tú empresa.</p>    
                       </div>
                       <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
@@ -153,11 +155,11 @@ const Header = ({ siteTitle, location }) => {
 
                 <li>
                   <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                      <div className="icon rounded-pill mr-3 p-2">
+                      <div className="icon mr-3 p-2">
                           <i className="mdi mdi-camera"></i>
                       </div>
                       <div className="content">
-                          <h5 className="h6 mb-0 text-dark">Fotografias</h5>
+                          <h5 className="h6 mb-1 text-dark">Fotografias</h5>
                           <p className="mb-0 small text-muted">Muestra con calidad tus productos y fotos de tu sitio web.</p>    
                       </div>
                       <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
@@ -165,7 +167,7 @@ const Header = ({ siteTitle, location }) => {
                 </li>
               </ul>
             </li> */}
-            
+{/*             
             <li className="nav-item has-submenu">
               <Link to="/marketing-digital" activeClassName="active" className="nav-link py-4">Marketing Digital <i className="mdi mdi-chevron-down"> </i></Link>
               <ul className="submenu rounded border left shadow">
@@ -173,12 +175,11 @@ const Header = ({ siteTitle, location }) => {
 
                   <li>
                     <Link to="/seo" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
+                        <div className="icon mr-3 p-2">
                             <i className="mdi mdi-laptop"></i>
                         </div>
                         <div className="content">
-                            {/* <span className="badge rounded-pill badge-secondary px-2">Etiqueta </span> */}
-                            <h5 className="h6 mb-0 text-dark">SEO</h5>
+                            <h5 className="h6 mb-1 text-dark">SEO</h5>
                             <p className="mb-0 small text-muted">Posiciona tu página web en los buscadores mas populares.</p>    
                         </div>
                         <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
@@ -187,44 +188,44 @@ const Header = ({ siteTitle, location }) => {
                   
                   <li>
                     <Link to="/redes-sociales" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
+                        <div className="icon mr-3 p-2">
                             <i className="mdi mdi-web"></i>
                         </div>
                         <div className="content">
-                            <h5 className="h6 mb-0 text-dark">Redes sociales</h5>
+                            <h5 className="h6 mb-1 text-dark">Redes sociales</h5>
                             <p className="mb-0 small text-muted">Manten comunicación con tus clientes en redes sociales.</p>    
                         </div>
                         <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
                     </Link>
                   </li>
 
-                  {/* <li>
+                  <li>
                     <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
+                        <div className="icon mr-3 p-2">
                             <i className="mdi mdi-basket"></i>
                         </div>
                         <div className="content">
-                            <h5 className="h6 mb-0 text-dark">Landing pages</h5>
+                            <h5 className="h6 mb-1 text-dark">Landing pages</h5>
                             <p className="mb-0 small text-muted">Crea campañas que atraigan nuevos y potenciales clientes.</p>    
                         </div>
                         <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
                     </Link>
-                  </li> */}
+                  </li>
                 </div>
               </ul>
             </li>
-            
+             */}
             <li className="nav-item has-submenu">
               <Link to="/nosotros" activeClassName="active" className="nav-link py-4">Nosotros <i className="mdi mdi-chevron-down"> </i></Link>
-              <ul className="submenu rounded border left shadow">
+              <ul className="submenu rounded border right shadow">
                 <div className="overflow-hidden rounded">
                   {/* <li>
                     <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
+                        <div className="icon mr-3 p-2">
                             <i className="mdi mdi-hexagon-multiple"></i>
                         </div>
                         <div className="content">
-                            <h5 className="h6 mb-0 text-dark">Equipo</h5>
+                            <h5 className="h6 mb-1 text-dark">Equipo</h5>
                             <p className="mb-0 small text-muted">Talento de todo el mundo.</p>    
                         </div>
                         <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
@@ -233,11 +234,11 @@ const Header = ({ siteTitle, location }) => {
                   
                   {/* <li>
                     <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
+                        <div className="icon mr-3 p-2">
                             <i className="mdi mdi-pencil"></i>
                         </div>
                         <div className="content">
-                            <h5 className="h6 mb-0 text-dark">Publicaciones</h5>
+                            <h5 className="h6 mb-1 text-dark">Publicaciones</h5>
                             <p className="mb-0 small text-muted">Contenido de valor para negocios y desarrolladores.</p>    
                         </div>
                         <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
@@ -246,11 +247,11 @@ const Header = ({ siteTitle, location }) => {
 
                   <li>
                     <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
-                        <div className="icon rounded-pill mr-3 p-2">
+                        <div className="icon mr-3 p-2">
                             <i className="mdi mdi-map"></i>
                         </div>
                         <div className="content">
-                            <h5 className="h6 mb-0 text-dark">Contacto</h5>
+                            <h5 className="h6 mb-1 text-dark">Contacto</h5>
                             <p className="mb-0 small text-muted">Empresa local, remota e internacional.</p>    
                         </div>
                         <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
@@ -277,6 +278,7 @@ const Header = ({ siteTitle, location }) => {
         <Link to="/cotizar" className="btn btn-outline-primary ml-3">
           Cotizar ahora
         </Link>
+      </div>
       </div>
     </header>
   )

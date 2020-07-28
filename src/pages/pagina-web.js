@@ -41,7 +41,7 @@ const PaginaWeb = () => {
           }
         }
       }
-      laptopR: file(relativePath: { eq: "pagina-web/laptop-r.png" }) {
+      laptopR: file(relativePath: { eq: "pagina-web/desktop.png" }) {
         childImageSharp {
           fluid(quality: 90) {
               ...GatsbyImageSharpFluid
@@ -80,6 +80,67 @@ const PaginaWeb = () => {
     <Layout>
       <SEO title="Página Web" />
 
+      <div className="mx-1 position-relative">
+        <div className="d-none d-md-block bg-gradient rounded h-100 position-absolute" style={{left: "0", width: "40%"}}></div>
+
+        <section className="container-lg">
+          <div className="row">
+
+            <div className="d-flex flex-column justify-content-center col-12 col-md-6 position-relative">
+              <div className="d-block d-md-none bg-gradient rounded h-100 position-absolute w-75" style={{left: "0"}}></div>
+
+              <div className="w-100 d-flex" style={{transform: "translate(50px, 0px)"}}>
+                <Img fluid={data.laptopR.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.2)"}} alt="Página web" />
+              </div>
+            </div>
+            {/* <div className="col-2"></div> */}
+            <div className="d-md-none">
+              <BreadCrumbs 
+                list={[
+                  {
+                    name: 'Web',
+                    to: '/web'
+                  },
+                  {
+                    name: 'Página Web',
+                  }
+                ]}
+              />
+            </div>
+
+            <div className="d-flex flex-column justify-content-center col-12 col-md-6 py-5">
+              <h2 className="tag text-muted">Página Web</h2>
+              <h1 className="pb-3 text-primary">El crecimiento es una suma de acciones</h1>
+              <p className="mb-5 text-dark">Una página web despeja las dudas y genera confianza en tus compradores.</p>
+              <form onSubmit={() => console.log('enviar')} className="w-75" >
+                <small className="form-text text-dark mb-2">Ingresa tu correo para solicitar una cotización.</small>
+                <div className="form-group d-flex">
+                  {/* <label for="exampleInputEmail1">Email address</label> */}
+                  <input type="email" className="form-control mr-2"  placeholder="mi.correo@example.com" required />
+                  <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-arrow-right"></i></button>
+                </div>
+              </form>
+            </div>
+            
+          </div>
+          
+        </section>
+      </div>
+      
+      <div className="d-none d-md-block">
+        <BreadCrumbs 
+          list={[
+            {
+              name: 'Web',
+              to: '/web'
+            },
+            {
+              name: 'Página Web',
+            }
+          ]}
+        />
+      </div>
+{/* 
       <section className="m-1 py-5 bg-gradient rounded">
         <div className="container-lg">
           <div className="row">
@@ -87,11 +148,11 @@ const PaginaWeb = () => {
               <h2 className="tag text-light">Página Web</h2>
               <h1 className="pb-3 text-white">Muestrale a los clientes tus servicios o productos por internet, con tú propio sitio web.</h1>
               <p className="mb-5">Una página web despeja las dudas y genera confianza en tus compradores.</p>
-              {/* <Link to="paginas-web" className="btn rounded-pill btn-light">Go to page 2</Link> */}
+              <Link to="paginas-web" className="btn rounded-pill btn-light">Go to page 2</Link>
               <small className="form-text text-light mb-2">Ingresa tu correo para solicitar una cotización.</small>
               <form onSubmit={() => console.log('enviar')} className="w-75" >
                 <div className="form-group d-flex">
-                  {/* <label for="exampleInputEmail1">Email address</label> */}
+                  <label for="exampleInputEmail1">Email address</label>
                   <input type="email" className="form-control mr-2"  placeholder="mi.correo@example.com" required />
                   <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-arrow-right"></i></button>
                 </div>
@@ -102,19 +163,9 @@ const PaginaWeb = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <BreadCrumbs 
-        list={[
-          {
-            name: 'Web',
-            to: '/web'
-          },
-          {
-            name: 'Página Web',
-          }
-        ]}
-      />
+      
 
       <section className="container-lg py-5 my-5">
         <div className="row flex-row-reverse">
@@ -173,13 +224,16 @@ const PaginaWeb = () => {
         </div>
       </section>
 
-      <section className="container-lg my-5 py-5 bg-primary rounded">
-        <div className="py-5 d-flex flex-column align-items-center text-white">
-          <h5 className="tag">E-Commerce</h5>
-          <h2 className=" mb-3 text-light text-center">Vende tus productos con una tienda en linea.</h2>
-          <p className="text-center mb-5">Nuestro proposito es crear tu página web que venda por ti, que aproveches todas las oportunidades que tiene internet para tu negocio.</p>
-          <Link to="paginas-web" className="btn rounded btn-light">Me interesa</Link>
+      <section className="px-1">
+        <div className="container-lg py-5 bg-primary rounded">
+          <div className="py-5 d-flex flex-column align-items-center">
+            <h5 className="tag text-light">E-Commerce</h5>
+            <h2 className=" mb-3 text-light text-center">Vende tus productos con una tienda en linea.</h2>
+            <p className="text-center mb-5">Nuestro proposito es crear tu página web que venda por ti, que aproveches todas las oportunidades que tiene internet para tu negocio.</p>
+            <Link to="paginas-web" className="btn rounded btn-light">Me interesa</Link>
+          </div>
         </div>
+
       </section>
 
       <section className="container-lg py-5">

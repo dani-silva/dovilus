@@ -38,6 +38,7 @@ const Footer = ({ metaData }) => (
                 <input type="email" className="form-control mr-2" placeholder="mi.correo@example.com" required />
                 <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-email-send-outline"></i></button>
               </div>
+              <small className="small text-muted">Puedes cancelar la suscripción en cualquier momento. <Link to="/privacidad" className="text-dark">Lee nuestra Política de privacidad.</Link></small>
             </form>
           </div>
         </div>
@@ -46,7 +47,7 @@ const Footer = ({ metaData }) => (
         <div className="container-lg">
           <div className="row">
             <div className="py-3 col-md-6 d-flex align-items-center text-white small justify-content-center justify-content-md-start">
-              <span className="brand">{new Date().getFullYear()} © {metaData.title} </span>
+              <span className="brand">© {metaData.title} </span>
             </div>
             <div className="col-md-6 d-flex justify-content-center justify-content-md-end">
               <ul className="nav">

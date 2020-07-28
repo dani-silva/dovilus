@@ -92,13 +92,13 @@ const Web = () => {
     <Layout>
         <SEO title="Servicios Web" />
 
-        <section className="m-1 bg-gradient rounded" style={{overflow: 'visible'}}>
+        <section className="mx-1 bg-gradient rounded" style={{overflow: 'visible'}}>
           <div className="container-lg">
             <div className="row">
                 <div className="py-5 col-md-6 d-flex flex-column align-items-start justify-content-center">
                     <h3 className="tag text-light">Servicios web</h3>
                     <h1 className="text-light pb-3">Muestra a los compradores en línea</h1>
-                    <p className="text-light mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lobortis cursus ut in hac sit pellentesque sed pharetra. Augue quam risus suspendisse tempus volutpat iaculis et. Lectus in adipiscing amet iaculis at quam. Quisque nisl at nam.</p>
+                    <p className="text-light mb-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lobortis cursus ut in hac sit pellentesque sed pharetra. Augue quam risus suspendisse tempus volutpat iaculis et. Lectus in adipiscing amet iaculis at quam. Quisque nisl at nam.</p>
                     {/* <Link to="paginas-web" className="btn btn-primary rounded-pill mr-auto">Go to page 2</Link> */}
                 </div>
                 <div className="col-md-6 d-flex align-items-end justify-content-center">
