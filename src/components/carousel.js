@@ -71,8 +71,8 @@ const Slider = () => {
       tag: 'Vision',
       body: <>
         <h6 className="tag text-light">El mundo te espera</h6>
-        <p className="h1 text-white mb-4">Comparte la vision que te motiva a seguir a ti y a tus colaboradores</p>
-        <p className="text-light">Nuestro proposito es ayudar a las empresas a crecer en internet de manera rapida y segura, con herramientas tecnologicas de vanguardia y donde ellas seas las protagonista.</p>
+        <h2 className="h1 text-white mb-4">Comparte la vision que te motiva a seguir a ti y a tus colaboradores</h2>
+        <p className="text-light w-75">Nuestro proposito es ayudar a las empresas a crecer en internet de manera rapida y segura, con herramientas tecnologicas de vanguardia y donde ellas seas las protagonista.</p>
         <Link to="/cotizar" className="btn btn-primary mt-4" >Me interesa un proyecto</Link>
       </>,
       image: data.planet.childImageSharp
@@ -81,8 +81,8 @@ const Slider = () => {
       tag: 'Innovacion',
       body: <>
         <h6 className="tag text-light">Desarrollo de soluciones digitales</h6>
-        <p className="h1 text-white mb-4">Procesos permanentes <br /> de inovación y renovación</p>
-        <p className="text-light">Nuestro proposito es ayudar a las empresas a crecer en internet de manera rapida y segura, con herramientas tecnologicas de vanguardia y donde ellas seas las protagonista.</p>
+        <h2 className="h1 text-white mb-4">Procesos permanentes <br /> de inovación y renovación</h2>
+        <p className="text-light w-75">Nuestro proposito es ayudar a las empresas a crecer en internet de manera rapida y segura, con herramientas tecnologicas de vanguardia y donde ellas seas las protagonista.</p>
         <Link to="/cotizar" className="btn btn-primary mt-4" >Me interesa un proyecto</Link>
       </>,
       image: data.museum.childImageSharp
@@ -91,8 +91,8 @@ const Slider = () => {
       tag: 'Renovación',
       body: <>
         <h6 className="tag text-light">Automatiza procesos</h6>
-        <p className="h1 text-white mb-4">Supera los retos del mundo con herramientas digitales que mejoran resultados</p>
-        <p className="text-light">Nuestro proposito es ayudar a las empresas a crecer en internet de manera rapida y segura, con herramientas tecnologicas de vanguardia y donde ellas seas las protagonista.</p>
+        <h2 className="h1 text-white mb-4">Supera los retos del mundo con herramientas digitales que mejoran resultados</h2>
+        <p className="text-light w-75">Nuestro proposito es ayudar a las empresas a crecer en internet de manera rapida y segura, con herramientas tecnologicas de vanguardia y donde ellas seas las protagonista.</p>
         <Link to="/cotizar" className="btn btn-primary mt-4" >Me interesa un proyecto</Link>
       </>,
       image: data.renovation.childImageSharp
@@ -101,8 +101,8 @@ const Slider = () => {
       tag: 'Crecimiento',
       body: <>
         <h6 className="tag text-light">Cambio estratégico</h6>
-        <p className="h1 text-white mb-4">Mejora tu negocio con estretegia, tecnologia, diseño y dovlius.</p>
-        <p className="text-light">Si buscas resultados distintos, no hagas siempre lo mismo.</p>
+        <h2 className="h1 text-white mb-4">Mejora tu negocio con estretegia, tecnologia, diseño y dovlius.</h2>
+        <p className="text-light w-75">Si buscas resultados distintos, no hagas siempre lo mismo.</p>
         <Link to="/cotizar" className="btn btn-primary mt-4" >Me interesa un proyecto</Link>
       </>,
       image: data.esfera.childImageSharp

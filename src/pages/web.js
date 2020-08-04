@@ -104,7 +104,7 @@ const Web = () => {
                 <div className="col-md-6 d-flex align-items-end justify-content-center">
                     <div className="row mt-4 w-100">
                         <div className="col-6" style={{transform: 'translate(0px, 40px)'}}>
-                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover btn-hover shadow btn-light animated bounceIn`}>
                               <div className="rounded overflow-hidden">
                                 <Img fluid={data.open.childImageSharp.fluid} />
                               </div>
@@ -114,7 +114,7 @@ const Web = () => {
                               </div> 
                             </Link>
 
-                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn`}>
                               <div className="rounded overflow-hidden">
                                 <Img fluid={data.shop.childImageSharp.fluid} />
                               </div>
@@ -124,7 +124,7 @@ const Web = () => {
                               </div> 
                             </Link>
 
-                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn`}>
                               <div className="rounded overflow-hidden">
                                 <Img fluid={data.coffee.childImageSharp.fluid} />
                               </div>
@@ -137,7 +137,7 @@ const Web = () => {
                         </div>
                         <div className="col-6" style={{transform: 'translate(0px, 80px)'}}>
 
-                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn`}>
                               <div className="rounded overflow-hidden">
                                 <Img fluid={data.service.childImageSharp.fluid} />
                               </div>
@@ -147,7 +147,7 @@ const Web = () => {
                               </div> 
                             </Link>
 
-                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn`}>
                               <div className="rounded overflow-hidden">
                                 <Img fluid={data.graphic.childImageSharp.fluid} />
                               </div>
@@ -157,7 +157,7 @@ const Web = () => {
                               </div>
                             </Link>
 
-                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn delay-1s`}>
+                            <Link to="/" className={`d-block position-relative p-0 overflow-hidden mb-4 btn btn-hover shadow btn-light animated bounceIn`}>
                               <div className="rounded overflow-hidden">
                                 <Img fluid={data.pay.childImageSharp.fluid} />
                               </div>
@@ -172,12 +172,15 @@ const Web = () => {
             </div>
           </div>
         </section>
+        
+        <div className="container-lg">
 
-        <BreadCrumbs 
-          list={[
-            {name: 'Web'}
-          ]}
-        />
+          <BreadCrumbs 
+            list={[
+              {name: 'Web'}
+            ]}
+          />
+        </div>
 
         <SectionImage 
             tag="Certificado SSL"

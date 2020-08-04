@@ -89,7 +89,7 @@ const PaginaWeb = () => {
             <div className="d-flex flex-column justify-content-center col-12 col-md-6 position-relative">
               <div className="d-block d-md-none bg-gradient rounded h-100 position-absolute w-75" style={{left: "0"}}></div>
 
-              <div className="w-100 d-flex" style={{transform: "translate(50px, 0px)"}}>
+              <div className="w-100 d-flex py-5" style={{transform: "translate(50px, 0px)"}}>
                 <Img fluid={data.laptopR.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.2)"}} alt="Página web" />
               </div>
             </div>
@@ -127,7 +127,7 @@ const PaginaWeb = () => {
         </section>
       </div>
       
-      <div className="d-none d-md-block">
+      <div className="container-lg d-none d-md-block">
         <BreadCrumbs 
           list={[
             {

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `dovlius`,
-    description: `Desarrollo de soluciones digitales`,
+    description: `Desarrollo de soluciones digitales estrategicas.`,
     socialMedia: {
       facebook: 'https://facebook.com/dovlius',
       instagram: 'https://instagram.com/dovlius',

@@ -112,7 +112,7 @@ const Ecommerce = () => {
         <div className="rounded bg-gradient">
           <div className="container-lg">
             <div className="row py-3">
-              <div className="col-12 col-md-6 d-flex flex-column justify-content-center p-4 text-center text-md-left">
+              <div className="col-12 col-md-6 d-flex flex-column justify-content-center py-4 text-center text-md-left">
                 <h2 className="tag text-light">Tienda online</h2>
                 <h1 className="text-light">Comienza tu negocio en internet y aumenta las ventas</h1>
               </div>
@@ -124,7 +124,7 @@ const Ecommerce = () => {
             </div>
           </div>
         </div>
-        <div className="mt-5 mt-md-0">
+        <div className="container-lg mt-5 mt-md-0">
 
           <BreadCumbs list={[{name:'Web', to:'web'}, {name: 'Tienda en Linea'}]} />
         </div>
@@ -262,7 +262,7 @@ const Ecommerce = () => {
       <section className="px-5 px-md-3 container-lg">
         <div className="py-5 d-flex flex-column align-items-center">
           <span className="tag mb-2">Caracteristicas</span>
-          <h2 className=" pb-3 text-center">Oportunidades que puedes añadir a tu sitio web para que sea una herramienta de ventas más efectiva.</h2>
+          <h2 className="pb-3 text-center w-md-75">Oportunidades que puedes añadir a tu sitio web para que sea una herramienta de ventas más efectiva.</h2>
         </div>
 
         <div className="pt-5">
@@ -296,11 +296,11 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      <section className="px-5 px-md-3 container-lg py-5">
+      <section className="px-5 px-md-3 container-lg py-5 mt-5">
         <div className="row">
           <div className="mb-5 d-flex flex-column align-items-center">
             <span className="tag">Preguntas frecuentes</span>
-            <h2 className="pb-3 text-center">Muestra a los compradores en línea que eres local y que estás orgulloso de serlo.</h2>
+            <h2 className="pb-3 text-center w-md-75">Muestra a los compradores en línea que eres local y que estás orgulloso de serlo.</h2>
           </div>
         </div>
         <div className="row">
@@ -330,13 +330,13 @@ const Ecommerce = () => {
       <section className="container py-5">
         <div className="row">
           <div className="col-12 col-md-6">
-            <h3 className="text-dark">
+            <h3 className="text-dark w-75">
               Empieza ahora tu sitio E-commerce solicitando tu cotización sin costo.
             </h3>
           </div>
           <div className="col-12 col-md-6">
             <small className="form-text mb-2">Ingresa tu correo para iniciar una cotización.</small>
-            <form onSubmit={() => console.log('enviar')} className="w-100" >
+            <form onSubmit={() => console.log('enviar')} className="w-75" >
               <div className="form-group input-group-lg d-flex">
                 {/* <label for="exampleInputEmail1">Email address</label> */}
                 <input type="email" className="form-control mr-2" placeholder="mi.correo@example.com" required />
