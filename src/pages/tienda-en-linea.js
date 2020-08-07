@@ -108,13 +108,14 @@ const Ecommerce = () => {
 
     <Layout>
       <SEO title="Tienda en Linea" />
+
       <section className="px-1 pb-5">
         <div className="rounded bg-gradient">
           <div className="container-lg">
             <div className="row py-3">
               <div className="col-12 col-md-6 d-flex flex-column justify-content-center py-4 text-center text-md-left">
                 <h2 className="tag text-light">Tienda online</h2>
-                <h1 className="text-light">Comienza tu negocio en internet y aumenta las ventas</h1>
+                <h1 className="text-light">Comienza tu negocio en internet y aumenta las ventas.</h1>
               </div>
               <div className="col-12 col-md-6">
                 <div className="" style={{transform: "translate(0px, 90px)"}}>
@@ -126,7 +127,14 @@ const Ecommerce = () => {
         </div>
         <div className="container-lg mt-5 mt-md-0">
 
-          <BreadCumbs list={[{name:'Web', to:'web'}, {name: 'Tienda en Linea'}]} />
+          <BreadCumbs 
+            list={[
+            //   {
+            //   name:'Web', 
+            //   to:'web'
+            // }, 
+            {name: 'Tienda en Linea'}
+            ]} />
         </div>
 
         {/* <div className="container">
@@ -190,9 +198,9 @@ const Ecommerce = () => {
         <div className="row flex-row-reverse">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
-              <h3 className="text-primary pb-3">El consumidor moderno es digital.</h3>
-              <p>Los clientes modernos cuentan con herramientas digitales que remplazan las actividades cotidianas, desde la comunicación en voz o video con familiares y amigos, investigar, aprender o realizar compras de despensa, ropa, electrodomesticos y muchas cosas mas.</p>
-              <p>El 45% de usuarios de internet realizan búsquedas relacionadas con negocios o productos locales.</p>
+              <h3 className="text-primary pb-3">Crea tu tienda en linea.</h3>
+              <p>Para vender no solo necesitas estar mas cerca, tambien ser más rápido.</p>
+              <p>Vender en internet es automatizar tu proceso de ventas, primero atraer clientes, despues explicarles tus servicios/productos, generar la confianza, y por ultimo le ofreces medios de pago en linea, puede ser con tarjeta de credito/debito o incluso en efectivo en tiendas de conveniencia.</p>
             </div>
             {/* <div className="d-none d-lg-block col-lg-1"></div> */}
             <div className="col-lg-6 col-md-5 col-sm-12 d-flex flex-column justify-content-center slideInUp animated">
@@ -205,8 +213,8 @@ const Ecommerce = () => {
         <div className="row">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
-              <h3 className="text-primary pb-3">En internet los horarios son cosa del pasado.</h3>
-              <p>Una página web despeja dudas y genera confianza a las personas, convenciéndolas de obtener el producto o servicio, aumentando tu competitividad sobre la competencia, generando ventas y oportunidades de negocio.</p>
+              <h3 className="text-primary pb-3">Desarrolla tu presencia Online.</h3>
+              <p>Una tienda en linea mejora la experiencia de compra que ofreces a tus clientes, el costo es minimo comparado con el costo de abrir sucursales(renta, servicios, seguros, etc) y distribuir tus productos/servicios.</p>
             </div>
             {/* <div className="d-none d-lg-block col-lg-1"></div> */}
             <div className="col-lg-6 col-md-5 col-sm-12 d-flex flex-column justify-content-center slideInUp animated">
@@ -226,8 +234,8 @@ const Ecommerce = () => {
                   <Img fixed={data.world.childImageSharp.fixed} className="rounded" alt="Siempre abierto" />
                 </div>
                 <div className="">
-                  <h3 className="h5 text-dark mb-2">Llega al 100% de la población</h3>
-                  <p className="text-muted">Los clientes modernos cuentan con herramientas digitales que remplazan las actividades cotidianas.</p>
+                  <h3 className="h5 text-dark mb-2">Llega al 100% del territorio</h3>
+                  <p className="text-muted">El acceso a internet nos permite conectarnos con personas en cualquier lugar.</p>
                 </div>
               </div>
 
@@ -236,8 +244,8 @@ const Ecommerce = () => {
                   <Img fixed={data.calendar.childImageSharp.fixed} className="rounded" alt="Siempre abierto" />
                 </div>
                 <div className="">
-                  <h3 className="h5 text-dark mb-2">Agendar citas 24/7</h3>
-                  <p className="text-muted">Los clientes modernos cuentan con herramientas digitales que remplazan las actividades cotidianas.</p>
+                  <h3 className="h5 text-dark mb-2">Ventas 24/7</h3>
+                  <p className="text-muted">Una parte importante del proceso de ventas, es el informar las caracteristicas y beneficios de tu servicio/producto adecuada y estratégicamente.</p>
                 </div>
               </div>
 
@@ -246,8 +254,8 @@ const Ecommerce = () => {
                   <Img fixed={data.sms.childImageSharp.fixed} className="rounded" alt="Siempre abierto" />
                 </div>
                 <div className="">
-                  <h3 className="h5 text-dark mb-2">Comunicación automatizada</h3>
-                  <p className="text-muted">Los clientes modernos cuentan con herramientas digitales que remplazan las actividades cotidianas.</p>
+                  <h3 className="h5 text-dark mb-2">Comunicación continua</h3>
+                  <p className="text-muted">Para retener un cliente, o cerrar una venta es necesario tener un servicio al cliente que le de confianza en su compra.</p>
                 </div>
               </div>
               {/* <p>El 45% de usuarios de internet realizan búsquedas relacionadas con negocios o productos locales.</p> */}
@@ -291,12 +299,12 @@ const Ecommerce = () => {
             <h5 className="tag text-light">Blog</h5>
             <h2 className="mb-4 text-center text-light">Crea una comunidad y presencia en internet.</h2>
             <p className="text-center mb-5 w-md-75">Estar conectado con tus clientes, que conozcan lo que tu negocio representa y les enseñes sobre ti crea comunidades solidas y presencia de marca de tu empresa.</p>
-            <Link to="/blog" className="btn rounded btn-light">Me interesa</Link>
+            {/* <Link to="/blog" className="btn rounded btn-light">Me interesa</Link> */}
           </div>
         </div>
       </section>
 
-      <section className="px-5 px-md-3 container-lg py-5 mt-5">
+      {/* <section className="px-5 px-md-3 container-lg py-5 mt-5">
         <div className="row">
           <div className="mb-5 d-flex flex-column align-items-center">
             <span className="tag">Preguntas frecuentes</span>
@@ -325,9 +333,9 @@ const Ecommerce = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="container py-5">
+      {/* <section className="container py-5">
         <div className="row">
           <div className="col-12 col-md-6">
             <h3 className="text-dark w-75">
@@ -338,14 +346,13 @@ const Ecommerce = () => {
             <small className="form-text mb-2">Ingresa tu correo para iniciar una cotización.</small>
             <form onSubmit={() => console.log('enviar')} className="w-75" >
               <div className="form-group input-group-lg d-flex">
-                {/* <label for="exampleInputEmail1">Email address</label> */}
                 <input type="email" className="form-control mr-2" placeholder="mi.correo@example.com" required />
                 <button type="submit" className="btn btn-primary rounded btn-lg"><i className="mdi mdi-arrow-right"></i></button>
               </div>
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
 
     </Layout>
   )

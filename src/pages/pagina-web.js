@@ -78,7 +78,7 @@ const PaginaWeb = () => {
 
   return(
     <Layout>
-      <SEO title="Página Web" />
+      <SEO title="Páginas Web" />
 
       <div className="mx-1 position-relative">
         <div className="d-none d-md-block bg-gradient rounded h-100 position-absolute" style={{left: "0", width: "40%"}}></div>
@@ -97,10 +97,10 @@ const PaginaWeb = () => {
             <div className="d-md-none">
               <BreadCrumbs 
                 list={[
-                  {
-                    name: 'Web',
-                    to: '/web'
-                  },
+                  // {
+                  //   name: 'Web',
+                  //   to: '/web'
+                  // },
                   {
                     name: 'Página Web',
                   }
@@ -110,13 +110,13 @@ const PaginaWeb = () => {
 
             <div className="d-flex flex-column justify-content-center col-12 col-md-6 py-5">
               <h2 className="tag text-muted">Página Web</h2>
-              <h1 className="pb-3 text-primary">El crecimiento es una suma de acciones</h1>
-              <p className="mb-5 text-dark">Una página web despeja las dudas y genera confianza en tus compradores.</p>
+              <h1 className="pb-3 text-primary">Tú negocio tiene que estar en internet.</h1>
+              <p className="mb-5 text-dark">Tu negocio necesita una pagina web, pero que funcione atrayendo clientes, mostrando presencia y dando confianza.</p>
               <form onSubmit={() => console.log('enviar')} className="w-75" >
                 <small className="form-text text-dark mb-2">Ingresa tu correo para solicitar una cotización.</small>
                 <div className="form-group d-flex">
                   {/* <label for="exampleInputEmail1">Email address</label> */}
-                  <input type="email" className="form-control mr-2"  placeholder="mi.correo@example.com" required />
+                  <input type="email" className="form-control mr-2 disabled"  placeholder="mi.correo@example.com" required />
                   <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-arrow-right"></i></button>
                 </div>
               </form>
@@ -130,10 +130,10 @@ const PaginaWeb = () => {
       <div className="container-lg d-none d-md-block">
         <BreadCrumbs 
           list={[
-            {
-              name: 'Web',
-              to: '/web'
-            },
+            // {
+            //   name: 'Web',
+            //   to: '/web'
+            // },
             {
               name: 'Página Web',
             }
@@ -167,7 +167,7 @@ const PaginaWeb = () => {
 
       
 
-      <section className="container-lg py-5 my-5">
+      <section className="px-5 px-md-3 container-lg py-5 my-5">
         <div className="row flex-row-reverse">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
@@ -182,8 +182,7 @@ const PaginaWeb = () => {
         </div>
       </section>
 
-
-      <section className="container-lg py-5 my-5">
+      <section className="px-5 px-md-3 container-lg py-5 my-5">
         <div className="row">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
@@ -197,7 +196,7 @@ const PaginaWeb = () => {
         </div>
       </section>
 
-      <section className="container-lg">
+      <section className="px-5 px-md-3 container-lg">
         <div className="py-5 d-flex flex-column align-items-center">
           <span className="tag mb-2">Caracteristicas</span>
           <h2 className=" pb-3 text-center">Oportunidades que puedes añadir a tu sitio web para que sea una herramienta de ventas más efectiva.</h2>
@@ -230,12 +229,12 @@ const PaginaWeb = () => {
             <h5 className="tag text-light">E-Commerce</h5>
             <h2 className=" mb-3 text-light text-center">Vende tus productos con una tienda en linea.</h2>
             <p className="text-center mb-5">Nuestro proposito es crear tu página web que venda por ti, que aproveches todas las oportunidades que tiene internet para tu negocio.</p>
-            <Link to="paginas-web" className="btn rounded btn-light">Me interesa</Link>
+            <Link to="/tienda-en-linea" className="btn rounded btn-light">Me interesa</Link>
           </div>
         </div>
 
       </section>
-
+{/* 
       <section className="container-lg py-5">
         <div className="mb-5 d-flex flex-column align-items-center">
           <span className="tag">Preguntas frecuentes</span>
@@ -267,7 +266,7 @@ const PaginaWeb = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
     </Layout>
   )

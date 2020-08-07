@@ -28,13 +28,13 @@ const Header = ({ siteTitle, location }) => {
           <Img fixed={data.file.childImageSharp.fixed} className="mr-2" alt={siteTitle} />
         </Link> 
         
-        <nav className={`nav-responsive d-flex flex-row align-items-center ml-auto d-md-block ${open ? "d-sm-block" : "d-sm-none"}`}>
-          <button className="btn btn-light rounded ml-auto m-2 d-md-none d-sm-block" onClick={() => setOpen(false)}><i className="mdi mdi-window-close"> </i></button> 
+        <nav className={`nav-responsive d-md-flex flex-row align-items-center ml-auto ${open ? "d-sm-flex" : "d-none"}`}>
+          <button className="btn btn-light rounded ml-auto mt-2 mr-2 d-md-none d-block" onClick={() => setOpen(false)}><i className="mdi mdi-window-close"> </i></button> 
           <ul className="nav">
             {/* <Link to="/" activeClassName="active" className="nav-link py-4">Inicio</Link> */}
             <li className="nav-item has-submenu">
-              <Link to="/web" activeClassName="active" className="nav-link py-4">Web <i className="mdi mdi-chevron-down"> </i></Link>
-              <ul className="submenu rounded border left shadow">
+              <Link to="/pagina-web" activeClassName="active" className="nav-link py-4">Comienza <i className="mdi mdi-chevron-down"> </i></Link>
+              <ul className="submenu rounded border right shadow">
                 <div className="overflow-hidden rounded">
                   
                   <li>
@@ -92,7 +92,7 @@ const Header = ({ siteTitle, location }) => {
                     </Link>
                   </li> */}
 
-                  <li className="row small bg-light m-0 py-4 border-top rounded-bottom">
+                  {/* <li className="row small bg-light m-0 py-4 border-top rounded-bottom">
                     <div className="col col-md-6">
                       <h6 className="text-primary">Proveedores</h6>
                       <Link to="/web" className="nav-link border-left">Dominio</Link>
@@ -104,7 +104,7 @@ const Header = ({ siteTitle, location }) => {
                       <Link to="/web" className="nav-link border-left">Seguridad Web</Link>
                       <Link to="/web" className="nav-link border-left">Analisis de trafico</Link>
                     </div>
-                  </li>
+                  </li> */}
 
                   {/* <hr className="mb-0" />
                   <li className="bg-light list-group-item list-group-item-action rounded-0 p-4 d-flex flex-column align-items-center border-0">
@@ -215,10 +215,10 @@ const Header = ({ siteTitle, location }) => {
               </ul>
             </li>
              */}
-            <li className="nav-item has-submenu">
+            {/* <li className="nav-item has-submenu">
               <Link to="/nosotros" activeClassName="active" className="nav-link py-4">Nosotros <i className="mdi mdi-chevron-down"> </i></Link>
               <ul className="submenu rounded border right shadow">
-                <div className="overflow-hidden rounded">
+                <div className="overflow-hidden rounded"> */}
                   {/* <li>
                     <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
                         <div className="icon mr-3 p-2">
@@ -245,7 +245,7 @@ const Header = ({ siteTitle, location }) => {
                     </Link>
                   </li> */}
 
-                  <li>
+                  {/* <li>
                     <Link to="/pagina-web" activeClassName="active-link" className="list-group-item list-group-item-action rounded-0 p-3 d-flex align-items-center border-0">
                         <div className="icon mr-3 p-2">
                             <i className="mdi mdi-map"></i>
@@ -256,24 +256,24 @@ const Header = ({ siteTitle, location }) => {
                         </div>
                         <i className="text-secondary mdi mdi-chevron-right ml-auto"> </i>
                     </Link>
-                  </li>
+                  </li> */}
 
                   {/* <hr className="mb-0" /> */}
-                  <li className="bg-light p-4 d-flex flex-column align-items-center border-top rounded-bottom">
+                  {/* <li className="bg-light p-4 d-flex flex-column align-items-center border-top rounded-bottom">
                       <div className="content mb-4">
                           <h5 className="text-primary">Trabajo</h5>
                           <p className="mb-0 text-muted">Buscamos socios que quieran construir la empresa de software más importante de México.</p> 
                       </div>
                       <Link to="/" className="btn btn-primary w-100">Me interesa</Link>
-                  </li>
-                </div>
+                  </li> */}
+                {/* </div>
               </ul>
-            </li>
+            </li> */}
             
           </ul>
         </nav>
         
-        <span className={`bg-close d-md-none d-sm-none ${open ? "d-sm-block" : ""}`}  onClick={() => setOpen(false)}></span>
+        <span className={`bg-close d-md-block ${open ? "d-sm-block" : "d-none"}`}  onClick={() => setOpen(false)}></span>
         <button className="btn btn-light rounded ml-auto my-3 d-md-none d-sm-block" onClick={() => setOpen(true)}><i className="mdi mdi-menu"> </i></button> 
         <Link to="/cotizar" className="btn btn-outline-primary ml-3">
           Cotizar ahora

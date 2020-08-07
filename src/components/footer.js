@@ -3,29 +3,29 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Footer = ({ metaData }) => (
-    <footer className="bg-light border-top">
+    <footer className="">
       <div className="container-lg">
         <div className="row py-5">
-          <div className="col-lg-4 col-md-12 pb-5">
+          <div className="col-lg-3 col-md-12 pb-5">
               <h4 className="text-dark pb-1 brand">{metaData.title}</h4>
               <p>{metaData.description}</p>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-6 pb-5 pb-md-0">
             <h6 className="text-dark pb-2">Servicios</h6>
             <ul>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">Página web</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">Diseño web</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">E-commerce</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">PWA</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/pagina-web" className="btn text-left px-0">Página web</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/pagina-web" className="btn text-left px-0">Diseño web</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/tienda-en-linea" className="btn text-left px-0">E-commerce</Link></li>
+              {/* <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">PWA</Link></li> */}
             </ul>
           </div>
-          <div className="col-lg-2 col-md-3 col-sm-6 pb-5 pb-md-0">
-            <h6 className="text-dark pb-2">Branding</h6>
+          <div className="col-lg-3 col-md-3 col-sm-6 pb-5 pb-md-0">
+            <h6 className="text-dark pb-2">Otras soluciones</h6>
             <ul>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">Pagina web</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">Pagina web</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">Pagina web</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">Pagina web</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Diseño web</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Desarollo web</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Cobrar en linea</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Marketing digital</Link></li>
             </ul>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 pb-5 pb-md-0">
@@ -38,14 +38,16 @@ const Footer = ({ metaData }) => (
                 <input type="email" className="form-control mr-2" placeholder="mi.correo@example.com" required />
                 <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-email-send-outline"></i></button>
               </div>
-              <small className="small text-muted">Puedes cancelar la suscripción en cualquier momento. <Link to="/privacidad" className="text-dark">Lee nuestra Política de privacidad.</Link></small>
+              <small className="small text-muted">Puedes cancelar la suscripción en cualquier momento. 
+              {/* <Link to="/" className="text-dark">Lee nuestra Política de privacidad.</Link> */}
+              </small>
             </form>
           </div>
         </div>
       </div>
       <div className="bg-primary">
         <div className="container-lg">
-          <div className="row">
+          <div className="row d-flex flex-column-reverse flex-md-row">
             <div className="py-3 col-md-6 d-flex align-items-center text-white small justify-content-center justify-content-md-start">
               <span className="brand">© {metaData.title} </span>
             </div>

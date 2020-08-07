@@ -5,9 +5,9 @@ import Img from 'gatsby-image'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Carousel from "../components/carousel"
+// import Carousel from "../components/carousel"
 import SectionImage from "../components/section-image"
-import SectionItems from "../components/section-items"
+// import SectionItems from "../components/section-items"
 import BreadCrumbs from "../components/breadcrumbs"
 
 const MarketingDigital = () => {

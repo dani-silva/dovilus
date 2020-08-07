@@ -5,9 +5,8 @@ import Img from 'gatsby-image'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Carousel from "../components/carousel"
+// import Carousel from "../components/carousel"
 import SectionImage from "../components/section-image"
-import SectionItems from "../components/section-items"
 import BreadCrumbs from "../components/breadcrumbs"
 
 const Web = () => {
@@ -74,7 +73,7 @@ const Web = () => {
           }
         }
       }
-      service: file(relativePath: { eq: "carousel/first.jpg" }) {
+      service: file(relativePath: { eq: "carousel/planet.jpg" }) {
         childImageSharp {
           fluid(maxHeight: 200, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -98,7 +97,7 @@ const Web = () => {
                 <div className="py-5 col-md-6 d-flex flex-column align-items-start justify-content-center">
                     <h3 className="tag text-light">Servicios web</h3>
                     <h1 className="text-light pb-3">Muestra a los compradores en línea</h1>
-                    <p className="text-light mb-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lobortis cursus ut in hac sit pellentesque sed pharetra. Augue quam risus suspendisse tempus volutpat iaculis et. Lectus in adipiscing amet iaculis at quam. Quisque nisl at nam.</p>
+                    {/* <p className="text-light mb-md-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Convallis lobortis cursus ut in hac sit pellentesque sed pharetra. Augue quam risus suspendisse tempus volutpat iaculis et. Lectus in adipiscing amet iaculis at quam. Quisque nisl at nam.</p> */}
                     {/* <Link to="paginas-web" className="btn btn-primary rounded-pill mr-auto">Go to page 2</Link> */}
                 </div>
                 <div className="col-md-6 d-flex align-items-end justify-content-center">
