@@ -3,7 +3,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Img from 'gatsby-image'
 
-const Header = ({ siteTitle, location }) => {
+const Header = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "logo.png" }) {
@@ -17,8 +17,6 @@ const Header = ({ siteTitle, location }) => {
   `)
 
   const [open, setOpen] =  React.useState(false)
-
-  // console.log("nav status", location)
 
   return(
     <header className="sticky-top p-1" style={{background: "linear-gradient(0deg, rgba(255,255,255,.1), rgba(255,255,255,1))"}}>

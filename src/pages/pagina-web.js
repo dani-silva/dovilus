@@ -83,10 +83,10 @@ const PaginaWeb = () => {
               <h1 className="pb-3 text-primary">Tú negocio tiene que estar en internet.</h1>
               <p className="mb-5 text-dark">Tu negocio necesita una pagina web, pero que funcione atrayendo clientes, mostrando presencia y dando confianza.</p>
               <form onSubmit={() => console.log('enviar')} className="w-75" >
-                <small className="form-text text-dark mb-2">Ingresa tu correo para solicitar una cotización.</small>
+                <label htmlFor="startProject" className="form-text small text-dark mb-2">Ingresa tu correo para solicitar una cotización.</label>
                 <div className="form-group d-flex">
                   {/* <label for="exampleInputEmail1">Email address</label> */}
-                  <input type="email" className="form-control mr-2 disabled"  placeholder="mi.correo@example.com" required />
+                  <input type="email" id="startProject" name="email" className="form-control mr-2 disabled"  placeholder="mi.correo@example.com" required />
                   <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-arrow-right"></i></button>
                 </div>
               </form>

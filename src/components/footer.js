@@ -31,16 +31,15 @@ const Footer = ({ metaData }) => (
           <div className="col-lg-4 col-md-6 col-sm-12 pb-5 pb-md-0">
             <h6 className="text-dark pb-2">Newsletter</h6>
 
-            <p className="form-text text-dark mb-4">Al ingresar tu correo electrónico, aceptas recibir correos electrónicos de marketing por parte de <span className="text-primary">dovlius</span>.</p>
-            <form onSubmit={() => console.log('enviar')} className="w-100" >
-              <div className="form-group d-flex">
-                {/* <label for="exampleInputEmail1">Email address</label> */}
-                <input type="email" className="form-control mr-2" placeholder="mi.correo@example.com" required />
-                <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-email-send-outline"></i></button>
-              </div>
-              <small className="small text-muted">Puedes cancelar la suscripción en cualquier momento. 
-              {/* <Link to="/" className="text-dark">Lee nuestra Política de privacidad.</Link> */}
-              </small>
+            <form onSubmit={() => alert('Por el momento no esta habilitado el newslatter, siguenos en nuestras redes sociales para estar al pendiente.')} className="w-100" >
+                <label htmlFor="newslatter" className="form-text text-dark mb-4">Al ingresar tu correo electrónico, aceptas recibir correos electrónicos de marketing por parte de <span className="text-primary">dovlius</span>.</label>
+                <div className="form-group d-flex">
+                  <input type="email" name="email" id="newslatter" className="form-control mr-2" placeholder="mi.correo@example.com" required />
+                  <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-email-send-outline"></i></button>
+                </div>
+                <small className="small text-muted">Puedes cancelar la suscripción en cualquier momento. 
+                {/* <Link to="/" className="text-dark">Lee nuestra Política de privacidad.</Link> */}
+                </small>
             </form>
           </div>
         </div>
@@ -54,16 +53,16 @@ const Footer = ({ metaData }) => (
             <div className="col-md-6 d-flex justify-content-center justify-content-md-end">
               <ul className="nav">
                 <li className="nav-item">
-                  <a href={metaData.socialMedia.facebook} className="nav-link py-3" target="_blank" rel="nofollow" title="Facebook"><i className="mdi mdi-facebook text-white"> </i></a>
+                  <a href={metaData.socialMedia.facebook} className="nav-link py-3" target="_blank" rel="noreferrer noopener" title="Facebook"><i className="mdi mdi-facebook text-white"> </i></a>
                 </li>
                 <li className="nav-item">
-                  <a href={metaData.socialMedia.pinterest} className="nav-link py-3" target="_blank" rel="nofollow" title="Pinterest"><i className="mdi mdi-pinterest text-white"> </i></a>
+                  <a href={metaData.socialMedia.pinterest} className="nav-link py-3" target="_blank" rel="noreferrer noopener" title="Pinterest"><i className="mdi mdi-pinterest text-white"> </i></a>
                 </li>
                 <li className="nav-item">
-                  <a href={metaData.socialMedia.twitter} className="nav-link py-3" target="_blank" rel="nofollow" title="Twitter"><i className="mdi mdi-twitter text-white"> </i></a>
+                  <a href={metaData.socialMedia.twitter} className="nav-link py-3" target="_blank" rel="noreferrer noopener" title="Twitter"><i className="mdi mdi-twitter text-white"> </i></a>
                 </li>
                 <li className="nav-item">
-                  <a href={metaData.socialMedia.instagram} className="nav-link py-3" target="_blank" rel="nofollow" title="Instagram"><i className="mdi mdi-instagram text-white"> </i></a>
+                  <a href={metaData.socialMedia.instagram} className="nav-link py-3" target="_blank" rel="noreferrer noopener" title="Instagram"><i className="mdi mdi-instagram text-white"> </i></a>
                 </li>
               </ul>
             </div>

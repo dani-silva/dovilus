@@ -11,7 +11,7 @@ const Slider = () => {
           fixed(height: 60, width: 100) {
             ...GatsbyImageSharpFixed
           },
-          fluid(quality: 100) {
+          fluid(quality: 75) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -21,7 +21,7 @@ const Slider = () => {
           fixed(height: 60, width: 100) {
             ...GatsbyImageSharpFixed
           },
-          fluid(quality: 100) {
+          fluid(quality: 75) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -31,7 +31,7 @@ const Slider = () => {
           fixed(height: 60, width: 100) {
             ...GatsbyImageSharpFixed
           },
-          fluid(quality: 100) {
+          fluid(quality: 75) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -41,7 +41,7 @@ const Slider = () => {
           fixed(height: 60, width: 100) {
             ...GatsbyImageSharpFixed
           },
-          fluid(quality: 100) {
+          fluid(quality: 75) {
             ...GatsbyImageSharpFluid
           }
         }
