@@ -11,7 +11,7 @@ const Ecommerce = () => {
 
   const data = useStaticQuery(graphql`
     query {
-        open: file(relativePath: { eq: "ecommerce/digital.png" }) {
+        open: file(relativePath: { eq: "ecommerce/digital.jpg" }) {
           childImageSharp {
             fluid(quality: 80) {
                 ...GatsbyImageSharpFluid
