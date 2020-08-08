@@ -33,7 +33,7 @@ const Header = ({ siteTitle, location }) => {
           <ul className="nav">
             {/* <Link to="/" activeClassName="active" className="nav-link py-4">Inicio</Link> */}
             <li className="nav-item has-submenu">
-              <Link to="/pagina-web" activeClassName="active" className="nav-link py-4">Comienza <i className="mdi mdi-chevron-down"> </i></Link>
+              <Link to="" activeClassName="active" className="nav-link py-4">Comienza <i className="mdi mdi-chevron-down"> </i></Link>
               <ul className="submenu rounded border right shadow">
                 <div className="overflow-hidden rounded">
                   

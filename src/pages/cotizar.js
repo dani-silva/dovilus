@@ -16,10 +16,11 @@ const Cotizar = () => (
           {/* <Form /> */}
           <p className="mb-2">Tambien puedes contactarnos en nuestras redes sociales:</p>
           <ul>
-            <li><Link to='https://fb.com/dovlius' className="text-primary mt-4" target="_blank">facebook.com/dovlius</Link></li>
-            <li><Link to='https://twitter.com/dovlius' className="text-primary mt-2" target="_blank">twitter.com/dovlius</Link></li>
-            <li><Link to='https://instagram.com/dovlius' className="text-primary mt-2" target="_blank">instagram.com/dovlius</Link></li>
-            <li><Link to='https://behance.com/dovlius' className="text-primary mt-2" target="_blank">behance.com/dovlius</Link></li>
+            <li><Link to='https://linkedin.com/company/dovlius' className="text-primary mt-4" target="_blank">Linkedin</Link></li>
+            <li><Link to='https://fb.com/dovlius' className="text-primary mt-4" target="_blank">Facebook</Link></li>
+            <li><Link to='https://twitter.com/dovlius' className="text-primary mt-2" target="_blank">Twitter</Link></li>
+            <li><Link to='https://instagram.com/dovlius' className="text-primary mt-2" target="_blank">Instagram</Link></li>
+            <li><Link to='https://behance.com/dovlius' className="text-primary mt-2" target="_blank">Behance</Link></li>
           </ul>
       </div>
     </section>
