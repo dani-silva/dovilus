@@ -46,13 +46,6 @@ const Slider = () => {
           }
         }
       }
-      logo: file(relativePath: { eq: "carousel/vector.png" }) {
-        childImageSharp {
-          fixed(height: 500) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
     }
   `)
 
@@ -135,7 +128,6 @@ const Slider = () => {
         <div className="container-lg h-100 d-flex flex-column justify-content-between py-4">
           <div style={{zIndex: '15'}}>
             <Link className="brand h4" to="/">
-              {/* <Img fixed={data.logo.childImageSharp.fixed} className="mr-2" alt="" /> */}
               dovlius
             </Link>
           </div>

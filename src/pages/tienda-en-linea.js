@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
 
 import Layout from "../components/layout"
@@ -31,32 +31,12 @@ const Ecommerce = () => {
             }
           }
         }
-        laptop: file(relativePath: { eq: "pagina-web/laptop.png" }) {
-          childImageSharp {
-            fluid(quality: 75) {
-                ...GatsbyImageSharpFluid
-            }
-            fixed(width: 588, height: 400) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        laptopR: file(relativePath: { eq: "ecommerce/laptop.png" }) {
+        laptop: file(relativePath: { eq: "ecommerce/laptop.png" }) {
           childImageSharp {
             fluid(quality: 90) {
                 ...GatsbyImageSharpFluid
             }
             fixed(width: 588, height: 400) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
-        service: file(relativePath: { eq: "carousel/first.jpg" }) {
-          childImageSharp {
-            fluid(maxHeight: 200, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-            fixed(height: 200) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -119,7 +99,7 @@ const Ecommerce = () => {
               </div>
               <div className="col-12 col-md-6">
                 <div className="" style={{transform: "translate(0px, 90px)"}}>
-                  <Img fluid={data.laptopR.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.4)"}} alt="Páwgina web" />
+                  <Img fluid={data.laptop.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.4)"}} alt="Páwgina web" />
                 </div>
               </div>
             </div>
@@ -152,7 +132,7 @@ const Ecommerce = () => {
             </div>
             <div className="col-6">
               <div className="" style={{transform: "translate(0px, -300px)"}}>
-                <Img fluid={data.laptopR.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.4)"}} alt="Páwgina web" />
+                <Img fluid={data.laptop.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.4)"}} alt="Páwgina web" />
               </div>
             </div>
           </div>
@@ -178,7 +158,7 @@ const Ecommerce = () => {
               </form>
             </div>
             <div className="col-12 col-md-6 d-none d-md-block">
-              <Img fluid={data.laptopR.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.3)"}} alt="Páwgina web" />
+              <Img fluid={data.laptop.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.3)"}} alt="Páwgina web" />
             </div>
           </div>
         </div>

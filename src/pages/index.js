@@ -11,16 +11,6 @@ const IndexPage = () => {
 
   const data = useStaticQuery(graphql`
     query {
-        image: file(relativePath: { eq: "pagina-web/tablet.png" }) {
-          childImageSharp {
-            fluid(quality: 75) {
-                ...GatsbyImageSharpFluid
-            }
-            fixed(width: 434, height: 658) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
         laptop: file(relativePath: { eq: "ecommerce/digital.png" }) {
           childImageSharp {
             fluid(quality: 75) {
@@ -41,30 +31,6 @@ const IndexPage = () => {
             }
           }
         }
-        esfera: file(relativePath: { eq: "carousel/esfera.png" }) {
-          childImageSharp {
-            fluid(maxHeight: 200, quality: 80) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        hexagonSecurity: file(relativePath: { eq: "pagina-web/hexagon-security.png" }) {
-          childImageSharp {
-            fluid(maxHeight: 200, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        service: file(relativePath: { eq: "carousel/first.jpg" }) {
-          childImageSharp {
-            fluid(maxHeight: 200, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-            fixed(height: 200) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
       }
     `)
 
@@ -77,6 +43,9 @@ const IndexPage = () => {
 
       <section className="px-5 px-md-3 container-lg py-5 my-5">
         <div className="row">
+            <div className="col-lg-6 col-md-5 col-sm-12 d-flex flex-column justify-content-center slideInUp animated">
+              <Img fluid={data.desktop.childImageSharp.fluid} className="rounded w-100 h-100" alt="Siempre abierto" />
+            </div>
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               <h6 className="tag text-muted">Pagina web</h6>
               <h3 className="text-primary pb-3">El consumidor moderno es digital.</h3>
@@ -84,18 +53,11 @@ const IndexPage = () => {
               <p>El 45% de usuarios de internet realizan búsquedas relacionadas con negocios o productos locales.</p>
               <Link to="/pagina-web" className="btn text-primary px-0">Comenzar <span className="mdi mdi-arrow-right"></span></Link>
             </div>
-            {/* <div className="d-none d-lg-block col-lg-1"></div> */}
-            <div className="col-lg-6 col-md-5 col-sm-12 d-flex flex-column justify-content-center slideInUp animated">
-              <Img fluid={data.desktop.childImageSharp.fluid} className="rounded w-100 h-100" alt="Siempre abierto" />
-            </div>
         </div>
       </section>
 
       <section className="px-5 px-md-3 container-lg py-5 my-5">
         <div className="row">
-            <div className="mb-5 mb-md-0 col-lg-6 col-md-5 col-sm-12 d-flex flex-column justify-content-center slideInUp animated">
-              <Img fluid={data.laptop.childImageSharp.fluid} className="rounded w-100 h-100" alt="Siempre abierto" />
-            </div>
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               <h6 className="tag text-muted">Ecommerce</h6>
               <h3 className="text-primary pb-3">Crea tu tienda en linea.</h3>
@@ -104,8 +66,10 @@ const IndexPage = () => {
             
               <Link to="/tienda-en-linea" className="btn text-primary px-0">Comenzar <span className="mdi mdi-arrow-right"></span></Link>
             </div>
-            {/* <div className="d-none d-lg-block col-lg-1"></div> */}
             
+            <div className="mb-5 mb-md-0 col-lg-6 col-md-5 col-sm-12 d-flex flex-column justify-content-center slideInUp animated">
+              <Img fluid={data.laptop.childImageSharp.fluid} className="rounded w-100 h-100" alt="Siempre abierto" />
+            </div>
         </div>
       </section>
 

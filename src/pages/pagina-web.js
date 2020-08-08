@@ -31,42 +31,12 @@ const PaginaWeb = () => {
           }
         }
       }
-      laptop: file(relativePath: { eq: "pagina-web/laptop.png" }) {
-        childImageSharp {
-          fluid(quality: 75) {
-              ...GatsbyImageSharpFluid
-          }
-          fixed(width: 588, height: 400) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      laptopR: file(relativePath: { eq: "pagina-web/desktop.png" }) {
+      desktop: file(relativePath: { eq: "pagina-web/desktop.png" }) {
         childImageSharp {
           fluid(quality: 90) {
               ...GatsbyImageSharpFluid
           }
           fixed(width: 588, height: 400) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      service: file(relativePath: { eq: "carousel/first.jpg" }) {
-        childImageSharp {
-          fluid(maxHeight: 200, quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-          fixed(height: 200) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      selva: file(relativePath: { eq: "carousel/selva.jpg" }) {
-        childImageSharp {
-          fluid(quality: 100) {
-            ...GatsbyImageSharpFluid
-          }
-          fixed(height: 200) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -90,7 +60,7 @@ const PaginaWeb = () => {
               <div className="d-block d-md-none bg-gradient rounded h-100 position-absolute w-75" style={{left: "0"}}></div>
 
               <div className="w-100 d-flex py-5" style={{transform: "translate(50px, 0px)"}}>
-                <Img fluid={data.laptopR.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.2)"}} alt="Página web" />
+                <Img fluid={data.desktop.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.2)"}} alt="Página web" />
               </div>
             </div>
             {/* <div className="col-2"></div> */}
@@ -159,7 +129,7 @@ const PaginaWeb = () => {
               </form>
             </div>
             <div className="col-12 col-md-6 d-none d-md-block d-flex">
-              <Img fluid={data.laptopR.childImageSharp.fluid} alt="Páwgina web" />
+              <Img fluid={data.desktop.childImageSharp.fluid} alt="Páwgina web" />
             </div>
           </div>
         </div>
