@@ -13,6 +13,20 @@ module.exports = {
   plugins: [
     `gatsby-plugin-material-ui`,
     {
+      resolve: "gatsby-plugin-firebase",
+      options: {
+        credentials: {
+          apiKey: "AIzaSyAIhLrbZjQkYXq3RJD16e4y93sJrq0jaoM",
+          authDomain: "dovlius.firebaseapp.com",
+          databaseURL: "https://dovlius.firebaseio.com",
+          projectId: "dovlius",
+          storageBucket: "dovlius.appspot.com",
+          messagingSenderId: "183897272213",
+          appId: "1:183897272213:web:b8c30de2f950c1fb47109c"
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         // your google analytics tracking id

@@ -1,3 +1,5 @@
+import "firebase/database"
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@mdi/font/css/materialdesignicons.min.css'
 

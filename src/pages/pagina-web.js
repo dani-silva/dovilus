@@ -44,7 +44,12 @@ const PaginaWeb = () => {
     }
   `)
 
+  let [email, setEmail] = React.useState('')
+
   // console.log('context', React.useContext)
+  let initProject = e => {
+    setEmail(e.target.value)
+  }
 
   return(
     <Layout>
@@ -82,14 +87,14 @@ const PaginaWeb = () => {
               <h2 className="tag text-muted">Página Web</h2>
               <h1 className="pb-3 text-primary">Tú negocio tiene que estar en internet.</h1>
               <p className="mb-5 text-dark">Tu negocio necesita una pagina web, pero que funcione atrayendo clientes, mostrando presencia y dando confianza.</p>
-              <form onSubmit={() => console.log('enviar')} className="w-75" >
-                <label htmlFor="startProject" className="form-text small text-dark mb-2">Ingresa tu correo para solicitar una cotización.</label>
+              <div className="w-75" >
+                <label htmlFor="startProject" className="div-text small text-dark mb-2">Ingresa tu correo para solicitar una cotización.</label>
                 <div className="form-group d-flex">
                   {/* <label for="exampleInputEmail1">Email address</label> */}
-                  <input type="email" id="startProject" name="email" className="form-control mr-2 disabled"  placeholder="mi.correo@example.com" required />
-                  <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-arrow-right"></i></button>
+                  <input type="email" onChange={initProject} id="startProject" name="email" className="form-control mr-2 disabled"  placeholder="mi.correo@ejemplo.com" />
+                  <Link state={{defaultEmail: email}} to="/cotizar" className="btn btn-primary rounded"><i className="mdi mdi-arrow-right"></i></Link>
                 </div>
-              </form>
+              </div>
             </div>
             
           </div>

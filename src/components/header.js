@@ -31,7 +31,7 @@ const Header = ({ siteTitle }) => {
           <ul className="nav">
             {/* <Link to="/" activeClassName="active" className="nav-link py-4">Inicio</Link> */}
             <li className="nav-item has-submenu">
-              <Link to="" activeClassName="active" className="nav-link py-4">Comienza <i className="mdi mdi-chevron-down"> </i></Link>
+              <Link to="/pagina-web" activeClassName="active" className="nav-link py-4">Empieza <i className="mdi mdi-chevron-down"> </i></Link>
               <ul className="submenu rounded border right shadow">
                 <div className="overflow-hidden rounded">
                   
@@ -274,7 +274,7 @@ const Header = ({ siteTitle }) => {
         <span className={`bg-close d-md-block ${open ? "d-sm-block" : "d-none"}`}  onClick={() => setOpen(false)}></span>
         <button className="btn btn-light rounded ml-auto my-3 d-md-none d-sm-block" onClick={() => setOpen(true)}><i className="mdi mdi-menu"> </i></button> 
         <Link to="/cotizar" className="btn btn-outline-primary ml-3">
-          Cotizar ahora
+          Contratanos
         </Link>
       </div>
       </div>

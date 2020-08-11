@@ -256,6 +256,23 @@ h6, .h6 {
     transform: translateX(-50px) rotate(-90deg);
 }
 
+.check {
+    display: inline;
+}
+
+.check > input {
+    display: none;
+}
+
+.check > input:hover + label {
+    background: #dee2e6 !important;
+}
+
+.check > input:checked + label {
+    background: #1E90FF !important;
+    color: #dee2e6 !important;
+}
+
 @media (max-width: 767px) {
 
     .nav-responsive {

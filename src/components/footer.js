@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Newsletter from './newsletter'
 
 const Footer = ({ metaData }) => (
     <footer className="">
@@ -30,17 +31,7 @@ const Footer = ({ metaData }) => (
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 pb-5 pb-md-0">
             <h6 className="text-dark pb-2">Newsletter</h6>
-
-            <form onSubmit={() => alert('Por el momento no esta habilitado el newslatter, siguenos en nuestras redes sociales para estar al pendiente.')} className="w-100" >
-                <label htmlFor="newslatter" className="form-text text-dark mb-4">Al ingresar tu correo electrónico, aceptas recibir correos electrónicos de marketing por parte de <span className="text-primary">dovlius</span>.</label>
-                <div className="form-group d-flex">
-                  <input type="email" name="email" id="newslatter" className="form-control mr-2" placeholder="mi.correo@example.com" required />
-                  <button type="submit" className="btn btn-primary rounded"><i className="mdi mdi-email-send-outline"></i></button>
-                </div>
-                <small className="small text-muted">Puedes cancelar la suscripción en cualquier momento. 
-                {/* <Link to="/" className="text-dark">Lee nuestra Política de privacidad.</Link> */}
-                </small>
-            </form>
+            <Newsletter />
           </div>
         </div>
       </div>
