@@ -64,8 +64,8 @@ const Slider = () => {
       tag: 'Vision',
       body: <>
         <h6 className="tag text-light">El mundo te espera</h6>
-        <h2 className="h1 text-white mb-4">Muestrate al mundo lo que ofreces y la vision por la que trabajas.</h2>
-        <p className="text-light w-75">Si quieres tener presencia local, regional o internacional para dar el siguiente paso a tu empresa y alcanzar tus metas, empieza ahora en internet.</p>
+        <h2 className="h2 text-white mb-4">Muestrate al mundo lo que ofreces y la vision por la que trabajas.</h2>
+        <p className="text-light w-75 d-none d-md-block">Si quieres tener presencia local, regional o internacional para dar el siguiente paso a tu empresa y alcanzar tus metas, empieza ahora en internet.</p>
         <Link to="/cotizar" className="btn btn-primary mt-4" >Me interesa un proyecto</Link>
       </>,
       image: data.planet.childImageSharp
@@ -74,8 +74,8 @@ const Slider = () => {
       tag: 'Innovacion',
       body: <>
         <h6 className="tag text-light">Desarrollo de soluciones digitales</h6>
-        <h2 className="h1 text-white mb-4">Procesos permanentes de innovación y renovación de procesos.</h2>
-        <p className="text-light w-75">Nuestro proposito es ayudar a las empresas a crecer en internet de manera rapida y segura, con herramientas tecnologicas de vanguardia y donde ellas seas las protagonista.</p>
+        <h2 className="h2 text-white mb-4">Procesos permanentes de innovación y renovación de procesos.</h2>
+        <p className="text-light w-75 d-none d-md-block">Nuestro proposito es ayudar a las empresas a crecer en internet de manera rapida y segura, con herramientas tecnologicas de vanguardia y donde ellas seas las protagonista.</p>
         <Link to="/cotizar" className="btn btn-primary mt-4" >Me interesa un proyecto</Link>
       </>,
       image: data.museum.childImageSharp
@@ -84,8 +84,8 @@ const Slider = () => {
       tag: 'Renovación',
       body: <>
         <h6 className="tag text-light">Automatiza procesos</h6>
-        <h2 className="h1 text-white mb-4">Supera los retos del mundo con herramientas digitales que mejoran resultados.</h2>
-        <p className="text-light w-75">La innovación tecnologia y la mejora continua le daran la energia a tu negocio para seguir adelante y creciendo.</p>
+        <h2 className="h2 text-white mb-4">Supera los retos del mundo con herramientas digitales que mejoran resultados.</h2>
+        <p className="text-light w-75 d-none d-md-block">La innovación tecnologia y la mejora continua le daran la energia a tu negocio para seguir adelante y creciendo.</p>
         <Link to="/cotizar" className="btn btn-primary mt-4" >Me interesa un proyecto</Link>
       </>,
       image: data.renovation.childImageSharp
@@ -94,8 +94,8 @@ const Slider = () => {
       tag: 'Crecimiento',
       body: <>
         <h6 className="tag text-light">Cambio estratégico</h6>
-        <h2 className="h1 text-white mb-4">Mejora tu negocio con estretegia, tecnologia y diseño.</h2>
-        <p className="text-light w-75">Si buscas resultados distintos, no hagas siempre lo mismo.</p>
+        <h2 className="h2 text-white mb-4">Mejora tu negocio con estretegia, tecnologia y diseño.</h2>
+        <p className="text-light w-75 d-none d-md-block">Si buscas resultados distintos, no hagas siempre lo mismo.</p>
         <Link to="/cotizar" className="btn btn-primary mt-4" >Me interesa un proyecto</Link>
       </>,
       image: data.esfera.childImageSharp
@@ -143,8 +143,8 @@ const Slider = () => {
               {
                 sliders.map( (slider, i) => {
                   return(
-                    <button onClick={() => handleSlide(i)} key={i} className={`position-relative btn btn-hover shadow ${carousel == i ? 'btn-primary' : 'btn-light'} p-0 mr-4 mr-md-0 mt-md-4 animated bounceIn`}>
-                      <div className="bg-light rounded overflow-hidden" style={{height: "60px", width: "100px"}}>
+                    <button onClick={() => handleSlide(i)} key={i} className={`position-relative btn btn-hover shadow ${carousel == i ? 'btn-primary' : 'btn-light'} p-0 mr-2 mr-md-0 mt-md-4 animated bounceIn`}>
+                      <div className="item-hero bg-light rounded overflow-hidden">
                         <Img fixed={slider.image.fixed} />
                       </div>
                       <small className={`badge ${carousel == i ? 'badge-primary' : 'badge-light'} position-absolute`} style={{zIndex: '10', top: '5px', left: '5px'}}>{slider.tag}</small>
