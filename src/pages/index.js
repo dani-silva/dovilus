@@ -41,7 +41,55 @@ const IndexPage = () => {
     }>
       <SEO title="Desarrollo web" />
 
-      <section className="px-5 px-md-3 container-lg py-5 my-5">
+      <section className="container-lg my-5 py-5">
+        <h2 className="h6 text-dark text-center">Desarrollo web</h2>
+        <h1 className="h2 text-center mb-3">Soluciones digitales estrategicas.</h1>
+        <p className="text-center">Supera los retos del mundo con herramientas digitales que mejoran resultados</p>
+      </section>
+{/* 
+      <section className="px-4 px-md-3 container-lg">
+        <div className="row my-5">
+          <div className="col-lg-4 col-md-6">
+            <div className="bg-primary p-4 rounded border d-flex flex-column justify-content-center">
+              <h4 className="text-light tag">Chat</h4>
+              <h5 className="text-light pb-3">Atiende las dudas de los compradores desde el sitio web.</h5>
+              <p className="text-light mb-0">Integrando el chat de Facebook o Whatsapp, tus clientes te podran contactar facilmente para pedir ayuda, más información o cualquier duda que puedan tener.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6">
+            <div className="bg-primary p-4 rounded border d-flex flex-column justify-content-center">
+              <h4 className="text-light tag">Chat</h4>
+              <h5 className="text-light pb-3">Atiende las dudas de los compradores desde el sitio web.</h5>
+              <p className="text-light mb-0">Integrando el chat de Facebook o Whatsapp, tus clientes te podran contactar facilmente para pedir ayuda, más información o cualquier duda que puedan tener.</p>
+            </div>
+          </div>
+          <div className="col-lg-4 col-md-6">
+            <div className="bg-primary p-4 rounded border d-flex flex-column justify-content-center">
+              <h4 className="text-light tag">Chat</h4>
+              <h5 className="text-light pb-3">Atiende las dudas de los compradores desde el sitio web.</h5>
+              <p className="text-light mb-0">Integrando el chat de Facebook o Whatsapp, tus clientes te podran contactar facilmente para pedir ayuda, más información o cualquier duda que puedan tener.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="w-75 bg-primary mx-auto rounded">
+        <div className="d-flex flex-row overflow-visible">
+          <div className="w-50 p-5">
+            <p className="tag">Etiqueta</p>
+            <h3 className="text-light">Titulo nivel tres</h3>
+            <p>El 45% de usuarios de internet realizan búsquedas relacionadas con negocios o productos locales.</p>
+          </div>
+          <div className="w-50">
+            <div className="img-size-right">
+              <Img fluid={data.desktop.childImageSharp.fluid} />
+
+            </div>
+          </div>
+        </div>
+      </section> */}
+
+      <section className="px-4 px-md-3 container-lg py-5 my-5">
         <div className="row">
             <div className="col-lg-6 col-md-5 col-sm-12 d-flex flex-column justify-content-center slideInUp animated">
               <Img fluid={data.desktop.childImageSharp.fluid} className="rounded w-100 h-100" alt="Siempre abierto" />
@@ -56,7 +104,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="px-5 px-md-3 container-lg py-5 my-5">
+      <section className="px-4 px-md-3 container-lg py-5 my-5">
         <div className="row">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               <h6 className="tag text-muted">Ecommerce</h6>
@@ -73,7 +121,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="my-5 py-5 bg-primary rounded m-1">
+      <section className="mt-5 py-5 bg-primary rounded m-1">
         <div className="container-lg">
           <div className="py-5 d-flex flex-column align-items-center text-white">
             <span className="tag">Nuestro propósito</span>

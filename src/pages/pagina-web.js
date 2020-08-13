@@ -142,7 +142,7 @@ const PaginaWeb = () => {
 
       
 
-      <section className="px-5 px-md-3 container-lg py-5 my-5">
+      <section className="px-4 px-md-3 container-lg py-5 my-5">
         <div className="row flex-row-reverse">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
@@ -157,7 +157,7 @@ const PaginaWeb = () => {
         </div>
       </section>
 
-      <section className="px-5 px-md-3 container-lg py-5 my-5">
+      <section className="px-4 px-md-3 container-lg py-5 my-5">
         <div className="row">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
@@ -171,7 +171,19 @@ const PaginaWeb = () => {
         </div>
       </section>
 
-      <section className="px-5 px-md-3 container-lg">
+      <section className="px-1 mb-5">
+        <div className="container-lg py-5 bg-primary rounded">
+          <div className="py-5 d-flex flex-column align-items-center">
+            <h5 className="tag text-light">E-Commerce</h5>
+            <h2 className=" mb-3 text-light text-center">Vende tus productos con una tienda en linea.</h2>
+            <p className="text-center mb-5">Nuestro proposito es crear tu página web que venda por ti, que aproveches todas las oportunidades que tiene internet para tu negocio.</p>
+            <Link to="/tienda-en-linea" className="btn rounded btn-light">Me interesa</Link>
+          </div>
+        </div>
+
+      </section>
+
+      <section className="px-4 px-md-3 container-lg">
         <div className="py-5 d-flex flex-column align-items-center">
           <span className="tag mb-2">Caracteristicas</span>
           <h2 className=" pb-3 text-center">Oportunidades que puedes añadir a tu sitio web para que sea una herramienta de ventas más efectiva.</h2>
@@ -198,17 +210,6 @@ const PaginaWeb = () => {
         </div>
       </section>
 
-      <section className="px-1">
-        <div className="container-lg py-5 bg-primary rounded">
-          <div className="py-5 d-flex flex-column align-items-center">
-            <h5 className="tag text-light">E-Commerce</h5>
-            <h2 className=" mb-3 text-light text-center">Vende tus productos con una tienda en linea.</h2>
-            <p className="text-center mb-5">Nuestro proposito es crear tu página web que venda por ti, que aproveches todas las oportunidades que tiene internet para tu negocio.</p>
-            <Link to="/tienda-en-linea" className="btn rounded btn-light">Me interesa</Link>
-          </div>
-        </div>
-
-      </section>
 {/* 
       <section className="container-lg py-5">
         <div className="mb-5 d-flex flex-column align-items-center">

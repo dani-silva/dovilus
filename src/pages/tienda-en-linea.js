@@ -98,8 +98,8 @@ const Ecommerce = () => {
                 <h1 className="text-light">Comienza tu negocio en internet y aumenta las ventas.</h1>
               </div>
               <div className="col-12 col-md-6">
-                <div className="" style={{transform: "translate(0px, 90px)"}}>
-                  <Img fluid={data.laptop.childImageSharp.fluid} className="w-100" style={{transform: "scale(1.4)"}} alt="Páwgina web" />
+                <div className="image-shop">
+                  <Img fluid={data.laptop.childImageSharp.fluid} className="w-100" alt="Tienda en linea" />
                 </div>
               </div>
             </div>
@@ -174,7 +174,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      <section className="px-5 px-md-3 container-lg py-5 my-5">
+      <section className="px-4 px-md-3 container-lg py-5 my-5">
         <div className="row flex-row-reverse">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
@@ -189,7 +189,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      <section className="px-5 px-md-3 container-lg py-5 my-5">
+      <section className="px-4 px-md-3 container-lg py-5 my-5">
         <div className="row">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
@@ -203,7 +203,7 @@ const Ecommerce = () => {
         </div>
       </section>
 
-      <section className="px-5 px-md-3 container-lg py-5 my-5">
+      <section className="px-4 px-md-3 container-lg py-5 my-5">
         <div className="row flex-row-reverse">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
               {/* <h6 className="tag"></h6> */}
@@ -246,8 +246,19 @@ const Ecommerce = () => {
             </div>
         </div>
       </section>
+      
+      <section className="px-1 mb-5">
+        <div className="container-lg py-5 bg-primary rounded">
+          <div className="py-5 d-flex flex-column align-items-center">
+            <h5 className="tag text-light">Blog</h5>
+            <h2 className="mb-4 text-center text-light">Crea una comunidad y presencia en internet.</h2>
+            <p className="text-center mb-5 w-md-75">Estar conectado con tus clientes, que conozcan lo que tu negocio representa y les enseñes sobre ti crea comunidades solidas y presencia de marca de tu empresa.</p>
+            {/* <Link to="/blog" className="btn rounded btn-light">Me interesa</Link> */}
+          </div>
+        </div>
+      </section>
 
-      <section className="px-5 px-md-3 container-lg">
+      <section className="px-4 px-md-3 container-lg">
         <div className="py-5 d-flex flex-column align-items-center">
           <span className="tag mb-2">Caracteristicas</span>
           <h2 className="pb-3 text-center w-md-75">Oportunidades que puedes añadir a tu sitio web para que sea una herramienta de ventas más efectiva.</h2>
@@ -273,18 +284,8 @@ const Ecommerce = () => {
             </div>
         </div>
       </section>
-      <section className="px-1">
-        <div className="container-lg py-5 bg-primary rounded">
-          <div className="py-5 d-flex flex-column align-items-center">
-            <h5 className="tag text-light">Blog</h5>
-            <h2 className="mb-4 text-center text-light">Crea una comunidad y presencia en internet.</h2>
-            <p className="text-center mb-5 w-md-75">Estar conectado con tus clientes, que conozcan lo que tu negocio representa y les enseñes sobre ti crea comunidades solidas y presencia de marca de tu empresa.</p>
-            {/* <Link to="/blog" className="btn rounded btn-light">Me interesa</Link> */}
-          </div>
-        </div>
-      </section>
 
-      {/* <section className="px-5 px-md-3 container-lg py-5 mt-5">
+      {/* <section className="px-4 px-md-3 container-lg py-5 mt-5">
         <div className="row">
           <div className="mb-5 d-flex flex-column align-items-center">
             <span className="tag">Preguntas frecuentes</span>

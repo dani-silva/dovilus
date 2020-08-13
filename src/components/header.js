@@ -26,8 +26,8 @@ const Header = ({ siteTitle }) => {
           <Img fixed={data.file.childImageSharp.fixed} className="mr-2" alt={siteTitle} />
         </Link> 
         
-        <nav className={`nav-responsive d-md-flex flex-row align-items-center ml-auto ${open ? "d-sm-flex" : "d-none"}`}>
-          <button className="btn btn-light rounded ml-auto mt-2 mr-2 d-md-none d-block" onClick={() => setOpen(false)}><i className="mdi mdi-window-close"> </i></button> 
+        <nav className={`nav-responsive rounded d-md-flex flex-row align-items-center ml-auto ${open ? "d-sm-flex" : "d-none"}`}>
+          <button className="btn btn-primary rounded ml-auto mt-2 mr-2 d-md-none d-block" onClick={() => setOpen(false)}><i className="mdi mdi-window-close"> </i></button> 
           <ul className="nav">
             {/* <Link to="/" activeClassName="active" className="nav-link py-4">Inicio</Link> */}
             <li className="nav-item has-submenu">

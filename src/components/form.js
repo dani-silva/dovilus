@@ -33,6 +33,10 @@ const Form = ({defaultEmail}) => {
             id: "blog",
             name: "Blog"
         },
+        {
+            id: "app",
+            name: "Aplicación Web"
+        },
     ]
     
     let submit = (e) => {

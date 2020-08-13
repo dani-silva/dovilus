@@ -27,6 +27,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: '215816039872993',
+      },
+    },
+    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         // your google analytics tracking id

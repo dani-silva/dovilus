@@ -274,6 +274,14 @@ h6, .h6 {
     color: #dee2e6 !important;
 }
 
+.image-shop {
+    transform: translate(0px, 90px);
+}
+
+.image-shop div {
+    transform: scale(1.4);
+}
+
 @media (max-width: 767px) {
     .item-hero {
         width: 82px;
@@ -287,11 +295,13 @@ h6, .h6 {
         justify-content: flex-start;
         align-items: flex-start !important;
         top: 0;
-        left: 0;
+        left: 5px;
         width: 100%;
         max-width: 300px;
-        height: 100vh;
+        height: calc(100vh - 10px);
         z-index: 100;
+        margin: 5px;
+        overflow-y: auto;
     }
 
     .bg-close {
@@ -319,6 +329,10 @@ h6, .h6 {
 
     .submenu::before {
         display: none !important;
+    }
+
+    .image-shop {
+        transform: translate(0px, 70px);
     }
 
 }

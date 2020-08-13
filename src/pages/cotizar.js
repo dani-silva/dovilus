@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import Form from "../components/form"
 
 const Cotizar = ({location}) => {
-  const { state = {}} = location
+  let state =  location.state ? location.state : {defaultEmail: ""}
 
   return (
     <Layout>
@@ -15,7 +15,7 @@ const Cotizar = ({location}) => {
       <section className="py-5">
         <div className="container-lg">
           <div className="row">
-            <div className="col-12 col-md-5">
+            <div className="col-12 col-md-5 mb-5">
               <small className="tag text-muted">Contactanos</small>
               {/* <h1 className="h2">¿Te interesa un projecto con dovlius?</h1> */}
               <p className="h4 text-dark">info@dovlius.com</p>

@@ -4,7 +4,7 @@ import React from "react"
 import Newsletter from './newsletter'
 
 const Footer = ({ metaData }) => (
-    <footer className="">
+    <footer className="m-1 p-1 rounded border">
       <div className="container-lg">
         <div className="row py-5">
           <div className="col-lg-3 col-md-12 pb-5">
@@ -35,13 +35,13 @@ const Footer = ({ metaData }) => (
           </div>
         </div>
       </div>
-      <div className="bg-primary">
+      <div className="bg-primary rounded">
         <div className="container-lg">
-          <div className="row d-flex flex-column-reverse flex-md-row">
-            <div className="py-3 col-md-6 d-flex align-items-center text-white small justify-content-center justify-content-md-start">
+          <div className="row">
+            <div className="p-3 d-flex align-items-center text-white small">
               <span className="brand">© {metaData.title} </span>
             </div>
-            <div className="col-md-6 d-flex justify-content-center justify-content-md-end">
+            <div className="d-flex ml-auto justify-content-center justify-content-md-end">
               <ul className="nav">
                 <li className="nav-item">
                   <a href={metaData.socialMedia.facebook} className="nav-link py-3" target="_blank" rel="noreferrer noopener" title="Facebook"><i className="mdi mdi-facebook text-white"> </i></a>
