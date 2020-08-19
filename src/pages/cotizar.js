@@ -32,7 +32,7 @@ const Cotizar = ({location}) => {
             </div>
             <div className="col-12 col-md-7">
               <small className="tag text-muted mb-0">Contratanos</small>
-              <h1 className="h2">¿Te interesa un proyecto con dovlius?</h1>
+              <h1 className="h2">¿Te interesa un proyecto con nosotros?</h1>
               <Form defaultEmail={state.defaultEmail} />
             </div>
           </div>

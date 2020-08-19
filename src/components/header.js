@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => {
   const [open, setOpen] =  React.useState(false)
 
   return(
-    <header className="sticky-top p-1" style={{background: "linear-gradient(0deg, rgba(255,255,255,.1), rgba(255,255,255,1))"}}>
+    <header className="sticky-top p-1" style={{background: "linear-gradient(0deg, rgba(255,255,255,.2), rgba(255,255,255,1))"}}>
       <div className="d-flex align-items-center justify-content-between border bg-light rounded">
       <div className="container-lg d-flex align-items-center justify-content-between">
         <Link to="/" className="d-flex align-items-center brand">

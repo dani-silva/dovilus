@@ -21,12 +21,13 @@ const Footer = ({ metaData }) => (
             </ul>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 pb-5 pb-md-0">
-            <h6 className="text-dark pb-2">Otras soluciones</h6>
+            <h6 className="text-dark pb-2">Servicios</h6>
             <ul>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Diseño web</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Desarollo web</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Cobrar en linea</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Marketing digital</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Programadores JS</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Desarrollo de aplicaciones</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Diseño UI/UX</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Marketing Digital</Link></li>
+              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Branding</Link></li>
             </ul>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 pb-5 pb-md-0">

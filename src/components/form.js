@@ -1,9 +1,109 @@
 import React from "react"
+
+import { Link, useStaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image'
+
 import isEmail from 'validator/lib/isEmail'
 import PropTypes from "prop-types"
 import firebase from 'gatsby-plugin-firebase'
 
 const Form = ({defaultEmail}) => {
+
+  const data = useStaticQuery(graphql`
+  query {
+      design: file(relativePath: { eq: "icons/design.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 30, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      ssl: file(relativePath: { eq: "icons/ssl.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 30, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      server: file(relativePath: { eq: "icons/server.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 30, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      develop: file(relativePath: { eq: "icons/develop.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 30, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      website: file(relativePath: { eq: "icons/website.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 30, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      ecommerce: file(relativePath: { eq: "icons/ecommerce.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 30, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      email: file(relativePath: { eq: "icons/email.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 30, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      marketing: file(relativePath: { eq: "icons/marketing.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 30, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      mobile: file(relativePath: { eq: "icons/mobile.png" }) {
+        childImageSharp {
+          fluid(quality: 75) {
+              ...GatsbyImageSharpFluid
+          }
+          fixed(width: 30, height: 30) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+
     const [dataForm, setForm] = React.useState({
         emailError: false
     })
@@ -15,27 +115,57 @@ const Form = ({defaultEmail}) => {
     let services = [
         {
             id: "marketing",
-            name: "Marketing"
+            name: "Marketing Digital",
+            image: data.marketing.childImageSharp.fixed
+        
         },
         {
             id: "website",
-            name: "Página Web"
+            name: "Página Web",
+            image: data.website.childImageSharp.fixed
+        
         },
         {
             id: "ui/ux",
-            name: "Diseño UI/UX"
+            name: "Diseño UI/UX",
+            image: data.design.childImageSharp.fixed
+        
         },
         {
             id: "ecommerce",
-            name: "Tienda en Linea"
+            name: "Tienda en Linea",
+            image: data.ecommerce.childImageSharp.fixed
+        
         },
         {
-            id: "blog",
-            name: "Blog"
+            id: "develops",
+            name: "Programadores JS",
+            image: data.develop.childImageSharp.fixed
+        
         },
         {
             id: "app",
-            name: "Aplicación Web"
+            name: "Aplicación Web",
+            image: data.mobile.childImageSharp.fixed
+        
+        },
+        {
+            id: "email",
+            name: "Correo electrónico",
+            image: data.email.childImageSharp.fixed
+        
+        },
+        {
+            id: "hosting",
+            name: "Hosting y Dominio",
+            image: data.server.childImageSharp.fixed
+        
+        },
+        {
+            id: "ssl",
+            name: "Certificado SSL",
+            image: data.ssl.childImageSharp.fixed
+        
         },
     ]
     
@@ -80,15 +210,15 @@ const Form = ({defaultEmail}) => {
         // <div className="w-100 h-100 position-fixed bg-dark" style={{zIndex: '2000'}}>
             <section className="mt-5">
                 <form ref={form} onSubmit={submit} className="w-100 pb-5 container" >
-                    <div className="form-group mb-4">
-                        <p className="">Servicios que necesitas *</p>
+                    <div className="form-group mb-5">
+                        <p className="">Selecciona los servicios que te interesan *</p>
                         <ul>
                             {
                                 services.map((service, i) => {
                                     return(
                                         <li key={i} className="check mr-2">
-                                            <input type="checkbox" id={service.id} name={service.id} value={service.name} defaultChecked={service.id == "website"} />
-                                            <label htmlFor={service.id} className="btn rounded border py-3">{service.name}</label>
+                                            <input type="checkbox" id={service.id} name={service.id} value={service.name} required />
+                                            <label htmlFor={service.id} className="btn rounded border py-3"><Img fixed={service.image} className="mb-2" /><p className="mb-0">{service.name}</p></label>
                                         </li>
                                     )
                                 })
@@ -115,38 +245,38 @@ const Form = ({defaultEmail}) => {
                             </li> */}
                         </ul>
                     </div>
-                    <div className="form-group mb-4">
-                        <p className="">Presupuesto para el proyecto *</p>
+                    <div className="form-group mb-5">
+                        <p className="">Presupuesto del que dispones *</p>
                         <ul>
                             <li className="check mr-2">
                                 <input type="radio" id="menos-5" name="budget" value="Menos de 5,000" />
-                                <label htmlFor="menos-5" className="btn rounded border py-3">Menos de 5,000</label>
+                                <label htmlFor="menos-5" className="btn rounded border py-3">Menos de $5,000</label>
                             </li>
                             <li className="check mr-2">
                                 <input type="radio" id="entre-5y10" name="budget" value="Entre 5,000 y 10,000" defaultChecked />
-                                <label htmlFor="entre-5y10" className="btn rounded border py-3">Entre 5,000 - 10,000</label>
+                                <label htmlFor="entre-5y10" className="btn rounded border py-3">Entre $5,000 - $10,000</label>
                             </li>
                             <li className="check mr-2">
                                 <input type="radio" id="mas-10" name="budget" value="Mas de 10,000" />
-                                <label htmlFor="mas-10" className="btn rounded border py-3">Mas de 10,000</label>
+                                <label htmlFor="mas-10" className="btn rounded border py-3">Mas de $10,000</label>
                             </li>
                         </ul>
 
                         <small className="text-muted">Presupuesto en MXN.</small>
                     </div>
-                    <div className="form-group mb-4">
+                    <div className="form-group mb-5">
                         <label htmlFor="name" className="">Nombre *</label>
                         <input type="text" className="form-control form-control-lg" id="name" name="name" placeholder="Mi empresa" required />
                         <small className="text-muted small">Puede ser el nombre de un encargado o nombre de la empresa.</small>
                     </div>
-                    <div className="form-group mb-4">
+                    <div className="form-group mb-5">
                         <label htmlFor="email" className="">Correo electrónico de contacto *</label>
                         <input type="email" className={`form-control form-control-lg ${dataForm.emailError ? 'is-invalid' : null}`} id="email" name="email" placeholder="ejemplo@miempresa.com" defaultValue={defaultEmail} required />
                         <div id="validationServer03Feedback" className="invalid-feedback">
                             Porfavor, introduce un correo electronico valido.
                         </div>
                     </div>
-                    <div className="form-group mb-4">
+                    <div className="form-group mb-5">
                         <label htmlFor="details">Detalles del proyecto (opcional)</label>
                         <textarea className="form-control form-control-lg" id="details" rows="3"></textarea>
                     </div>
