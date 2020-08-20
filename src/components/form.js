@@ -114,27 +114,27 @@ const Form = ({defaultEmail}) => {
     
     let services = [
         {
-            id: "marketing",
-            name: "Marketing Digital",
-            image: data.marketing.childImageSharp.fixed
-        
-        },
-        {
             id: "website",
             name: "Página Web",
             image: data.website.childImageSharp.fixed
         
         },
         {
-            id: "ui/ux",
-            name: "Diseño UI/UX",
-            image: data.design.childImageSharp.fixed
-        
-        },
-        {
             id: "ecommerce",
             name: "Tienda en Linea",
             image: data.ecommerce.childImageSharp.fixed
+        
+        },
+        {
+            id: "marketing",
+            name: "Marketing Digital",
+            image: data.marketing.childImageSharp.fixed
+        
+        },
+        {
+            id: "ui/ux",
+            name: "Diseño UI/UX",
+            image: data.design.childImageSharp.fixed
         
         },
         {
@@ -217,7 +217,7 @@ const Form = ({defaultEmail}) => {
                                 services.map((service, i) => {
                                     return(
                                         <li key={i} className="check mr-2">
-                                            <input type="checkbox" id={service.id} name={service.id} value={service.name} required />
+                                            <input type="checkbox" id={service.id} name={service.id} value={service.name} defaultChecked={service.id == 'website'} />
                                             <label htmlFor={service.id} className="btn rounded border py-3"><Img fixed={service.image} className="mb-2" /><p className="mb-0">{service.name}</p></label>
                                         </li>
                                     )
@@ -249,16 +249,20 @@ const Form = ({defaultEmail}) => {
                         <p className="">Presupuesto del que dispones *</p>
                         <ul>
                             <li className="check mr-2">
-                                <input type="radio" id="menos-5" name="budget" value="Menos de 5,000" />
+                                <input type="radio" id="menos-5" name="budget" value="Menos de $5,000" />
                                 <label htmlFor="menos-5" className="btn rounded border py-3">Menos de $5,000</label>
                             </li>
                             <li className="check mr-2">
-                                <input type="radio" id="entre-5y10" name="budget" value="Entre 5,000 y 10,000" defaultChecked />
-                                <label htmlFor="entre-5y10" className="btn rounded border py-3">Entre $5,000 - $10,000</label>
+                                <input type="radio" id="entre-5y10" name="budget" value="Entre $5,000 - $15,000" defaultChecked />
+                                <label htmlFor="entre-5y10" className="btn rounded border py-3">Entre $5,000 - $15,000</label>
                             </li>
                             <li className="check mr-2">
-                                <input type="radio" id="mas-10" name="budget" value="Mas de 10,000" />
-                                <label htmlFor="mas-10" className="btn rounded border py-3">Mas de $10,000</label>
+                                <input type="radio" id="entre-15y30" name="budget" value="Entre $15,000 - $30,000" />
+                                <label htmlFor="entre-15y30" className="btn rounded border py-3">Entre $15,000 - $30,000</label>
+                            </li>
+                            <li className="check mr-2">
+                                <input type="radio" id="mas-30" name="budget" value="Mas de $30,000" />
+                                <label htmlFor="mas-30" className="btn rounded border py-3">Mas de $30,000</label>
                             </li>
                         </ul>
 

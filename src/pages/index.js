@@ -146,13 +146,18 @@ const IndexPage = () => {
 
       <section className="my-5 py-5 container-lg">
         <div className="row">
-          <div className="col-12 col-md-3">
-            <h3 className="d-none d-md-block text-muted py-1" style={{transform: "rotate(-90deg) translate(-10px, -60px)"}}>¿Qué hacemos?</h3>
-            <h3 className="h5 d-block d-md-none text-muted py-1">¿Qué<br /> hacemos?</h3>
+          <div className="col-12 col-md-2">
+            <h3 className="d-none d-md-block text-muted py-1" style={{transform: "rotate(-90deg) translate(-40%, -25%)"}}>¿Qué hacemos?</h3>
+            <h3 className="h5 d-block d-md-none text-muted py-1">¿Qué hacemos?</h3>
           </div>
+          <div className="col-12 col-md-1"></div>
           <div className="col-12 col-md-9">
             <h1 className="h2 mb-4">Soluciones digitales estratégicas.</h1>
-            <p className="mb-5">Entendemos los desafios que pueden surgir en el proceso de desarrollo de tu proyecto...</p>
+            <p className="mb-5">
+              {/* Entendemos los desafios que pueden surgir en el proceso de desarrollo de tu proyecto...  */}
+              La tecnología siempre está evolucionando, con nuevos softwares que emergen de diferentes problemas y situaciones que se van presentando dentro de las empresas. 
+              Es por eso que tu, al igual que la tecnología, debes de estar evolucionando e innovando. 
+              Al invertir en tecnología, estás invirtiendo en crecimiento y estás impulsando tu empresa a mantenerse al corriente y seguir a delante en este mundo que no se detiene.</p>
           
             <iframe
                 id="d6c1f27d-6a27-4c7e-bd7d-bd19d7faa56c"
