@@ -8,20 +8,20 @@ const Footer = ({ metaData }) => (
       <div className="container-lg">
         <div className="row py-5">
           <div className="col-lg-3 col-md-12 pb-5">
-              <h4 className="text-dark pb-1 brand">{metaData.title}</h4>
+              <h4 className="text-primary pb-1 brand">{metaData.title}</h4>
               <p>{metaData.description}</p>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-6 pb-5 pb-md-0">
             <h6 className="text-dark pb-2">Servicios</h6>
             <ul>
               <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/pagina-web" className="btn text-left px-0">Página web</Link></li>
-              <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/pagina-web" className="btn text-left px-0">Diseño web</Link></li>
+              {/* <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/pagina-web" className="btn text-left px-0">Diseño web</Link></li> */}
               <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/tienda-en-linea" className="btn text-left px-0">E-commerce</Link></li>
               {/* <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="/" className="btn text-left px-0">PWA</Link></li> */}
             </ul>
           </div>
           <div className="col-lg-3 col-md-3 col-sm-6 pb-5 pb-md-0">
-            <h6 className="text-dark pb-2">Servicios</h6>
+            <h6 className="text-dark pb-2">Soluciones</h6>
             <ul>
               <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Programadores JS</Link></li>
               <li className="mb-2"><i className="mdi mdi-chevron-right"></i> <Link to="" className="btn text-left px-0">Desarrollo de aplicaciones</Link></li>

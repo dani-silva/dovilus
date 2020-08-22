@@ -139,7 +139,7 @@ const Form = ({defaultEmail}) => {
         },
         {
             id: "develops",
-            name: "Programadores JS",
+            name: "Solucion personalizada",
             image: data.develop.childImageSharp.fixed
         
         },
@@ -209,7 +209,7 @@ const Form = ({defaultEmail}) => {
     return(
         // <div className="w-100 h-100 position-fixed bg-dark" style={{zIndex: '2000'}}>
             <section className="mt-5">
-                <form ref={form} onSubmit={submit} className="w-100 pb-5 container" >
+                <form ref={form} onSubmit={submit} className="w-100 pb-5" >
                     <div className="form-group mb-5">
                         <p className="">Selecciona los servicios que te interesan *</p>
                         <ul>
@@ -300,7 +300,7 @@ const Form = ({defaultEmail}) => {
                             : null
                     }
 
-                    <button type="submit" className="btn btn-primary btn-lg mb-2">
+                    <button type="submit" className="btn btn-primary btn-lg mb-2 mx-1">
                         {
                             complete.length == "loading"
                             ? "Enviando..."

@@ -69,19 +69,6 @@ const PaginaWeb = () => {
               </div>
             </div>
             {/* <div className="col-2"></div> */}
-            <div className="d-md-none">
-              <BreadCrumbs 
-                list={[
-                  // {
-                  //   name: 'Web',
-                  //   to: '/web'
-                  // },
-                  {
-                    name: 'Página Web',
-                  }
-                ]}
-              />
-            </div>
 
             <div className="d-flex flex-column justify-content-center col-12 col-md-6 py-5">
               <h2 className="tag text-muted">Página Web</h2>
@@ -102,19 +89,6 @@ const PaginaWeb = () => {
         </section>
       </div>
       
-      <div className="container-lg d-none d-md-block">
-        <BreadCrumbs 
-          list={[
-            // {
-            //   name: 'Web',
-            //   to: '/web'
-            // },
-            {
-              name: 'Página Web',
-            }
-          ]}
-        />
-      </div>
 {/* 
       <section className="m-1 py-5 bg-gradient rounded">
         <div className="container-lg">
@@ -171,18 +145,6 @@ const PaginaWeb = () => {
         </div>
       </section>
 
-      <section className="px-1 mb-5">
-        <div className="container-lg py-5 bg-primary rounded">
-          <div className="py-5 d-flex flex-column align-items-center">
-            <h5 className="tag text-light">E-Commerce</h5>
-            <h2 className=" mb-3 text-light text-center">Vende tus productos con una tienda en linea.</h2>
-            <p className="text-center mb-5">Nuestro proposito es crear tu página web que venda por ti, que aproveches todas las oportunidades que tiene internet para tu negocio.</p>
-            <Link to="/tienda-en-linea" className="btn rounded btn-light">Me interesa</Link>
-          </div>
-        </div>
-
-      </section>
-
       <section className="px-4 px-md-3 container-lg">
         <div className="py-5 d-flex flex-column align-items-center">
           <span className="tag mb-2">Caracteristicas</span>
@@ -209,6 +171,19 @@ const PaginaWeb = () => {
             </div>
         </div>
       </section>
+
+      <section className="px-1">
+        <div className="py-5 bg-primary rounded">
+          <div className="py-5 d-flex flex-column align-items-center">
+            <h5 className="tag text-light">E-Commerce</h5>
+            <h2 className=" mb-3 text-light text-center">Vende tus productos con una tienda en linea.</h2>
+            <p className="text-center mb-5 w-75">Nuestro proposito es crear tu página web que venda por ti, que aproveches todas las oportunidades que tiene internet para tu negocio.</p>
+            <Link to="/tienda-en-linea" className="btn rounded btn-light">Me interesa</Link>
+          </div>
+        </div>
+
+      </section>
+
 
 {/* 
       <section className="container-lg py-5">
@@ -243,6 +218,20 @@ const PaginaWeb = () => {
           </div>
         </div>
       </section> */}
+
+      <div className="container-lg px-0">
+        <BreadCrumbs 
+          list={[
+            // {
+            //   name: 'Web',
+            //   to: '/web'
+            // },
+            {
+              name: 'Página Web',
+            }
+          ]}
+        />
+      </div>
 
     </Layout>
   )

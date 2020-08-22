@@ -61,7 +61,7 @@ const Slider = () => {
 
   const sliders = [
     {
-      tag: 'Vision',
+      tag: 'Visión',
       body: <>
         <h6 className="tag text-light">El mundo te espera</h6>
         <h2 className="h2 text-white mb-4">Muestrate al mundo lo que ofreces y la vision por la que trabajas.</h2>
@@ -71,7 +71,7 @@ const Slider = () => {
       image: data.planet.childImageSharp
     },
     {
-      tag: 'Innovacion',
+      tag: 'Innovación',
       body: <>
         <h6 className="tag text-light">Desarrollo de soluciones digitales</h6>
         <h2 className="h2 text-white mb-4">Procesos permanentes de innovación y renovación de procesos.</h2>

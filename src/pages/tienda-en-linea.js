@@ -105,17 +105,6 @@ const Ecommerce = () => {
             </div>
           </div>
         </div>
-        <div className="container-lg mt-5 mt-md-0">
-
-          <BreadCumbs 
-            list={[
-            //   {
-            //   name:'Web', 
-            //   to:'web'
-            // }, 
-            {name: 'Tienda en Linea'}
-            ]} />
-        </div>
 
         {/* <div className="container">
           <div className="row">
@@ -246,17 +235,6 @@ const Ecommerce = () => {
             </div>
         </div>
       </section>
-      
-      <section className="px-1 mb-5">
-        <div className="container-lg py-5 bg-primary rounded">
-          <div className="py-5 d-flex flex-column align-items-center">
-            <h5 className="tag text-light">Blog</h5>
-            <h2 className="mb-4 text-center text-light">Crea una comunidad y presencia en internet.</h2>
-            <p className="text-center mb-5 w-md-75">Estar conectado con tus clientes, que conozcan lo que tu negocio representa y les enseñes sobre ti crea comunidades solidas y presencia de marca de tu empresa.</p>
-            {/* <Link to="/blog" className="btn rounded btn-light">Me interesa</Link> */}
-          </div>
-        </div>
-      </section>
 
       <section className="px-4 px-md-3 container-lg">
         <div className="py-5 d-flex flex-column align-items-center">
@@ -334,6 +312,29 @@ const Ecommerce = () => {
           </div>
         </div>
       </section> */}
+
+      <section className="px-1">
+        <div className="py-5 bg-primary rounded">
+          <div className="py-5 d-flex flex-column align-items-center">
+            <h5 className="tag text-light">Blog</h5>
+            <h2 className="mb-4 text-center text-light">Crea una comunidad y presencia en internet.</h2>
+            <p className="text-center mb-5 w-75">Estar conectado con tus clientes, que conozcan lo que tu negocio representa y les enseñes sobre ti crea comunidades solidas y presencia de marca de tu empresa.</p>
+            {/* <Link to="/blog" className="btn rounded btn-light">Me interesa</Link> */}
+          </div>
+        </div>
+      </section>
+
+      <div className="container-lg px-0">
+
+        <BreadCumbs 
+          list={[
+          //   {
+          //   name:'Web', 
+          //   to:'web'
+          // }, 
+          {name: 'Tienda en Linea'}
+          ]} />
+      </div>
 
     </Layout>
   )

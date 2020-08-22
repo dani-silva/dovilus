@@ -152,7 +152,8 @@ const IndexPage = () => {
           </div>
           <div className="col-12 col-md-1"></div>
           <div className="col-12 col-md-9">
-            <h1 className="h2 mb-4">Soluciones digitales estratégicas.</h1>
+            {/* <h1 className="h2 mb-4">Soluciones digitales estratégicas.</h1> */}
+            <h1 className="h2 mb-4">Desarrollo de software y marketing.</h1>
             <p className="mb-5">
               {/* Entendemos los desafios que pueden surgir en el proceso de desarrollo de tu proyecto...  */}
               La tecnología siempre está evolucionando, con nuevos softwares que emergen de diferentes problemas y situaciones que se van presentando dentro de las empresas. 
@@ -170,7 +171,7 @@ const IndexPage = () => {
             <div className="row mt-5 pt-5">
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.develop.childImageSharp.fixed} className="mb-3" alt="Software" />
-                <h5 className="mb-3">Programadores JS</h5>
+                <h5 className="mb-3">Solucion personalizada</h5>
                 <p>API's, CRM, servicios de terceros o cualquier proceso personalizado que necesites desarrollar en Javascript(React.js, Node.js, Mongo.js).</p>
                 <span className="mdi mdi-language-javascript mr-2"></span>
                 <span className="mdi mdi-language-html5 mr-2"></span>
@@ -277,7 +278,7 @@ const IndexPage = () => {
               </div>
             </div>
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
-              <h6 className="tag text-muted">Página web</h6>
+              <h6 className="tag">Página web</h6>
               <h3 className="text-primary pb-3">El consumidor moderno es digital.</h3>
               <p>Los clientes modernos cuentan con herramientas digitales que remplazan las actividades cotidianas, desde la comunicación en voz o video con familiares y amigos, investigar, aprender o realizar compras de despensa, ropa, electrodomesticos y muchas cosas mas.</p>
               <p>El 45% de usuarios de internet realizan búsquedas relacionadas con negocios o productos locales.</p>
@@ -289,7 +290,7 @@ const IndexPage = () => {
       <section className="px-4 px-md-3 container-lg py-5 my-5">
         <div className="row">
             <div className="col-lg-6 col-md-7 col-sm-12 d-flex flex-column justify-content-center align-items-start">
-              <h6 className="tag text-muted">Ecommerce</h6>
+              <h6 className="tag">Ecommerce</h6>
               <h3 className="text-primary pb-3">Crea tu tienda en linea.</h3>
               <p>Para vender no solo necesitas estar mas cerca, tambien ser más rápido.</p>
               <p>Vender en internet es automatizar tu proceso de ventas, primero atraer clientes, despues explicarles tus servicios/productos, generar la confianza, y por ultimo le ofreces medios de pago en linea, puede ser con tarjeta de credito/debito o incluso en efectivo en tiendas de conveniencia.</p>
