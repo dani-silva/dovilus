@@ -4,7 +4,7 @@ import React from "react"
 import Newsletter from './newsletter'
 
 const Footer = ({ metaData }) => (
-    <footer className="m-1 p-1 rounded border">
+    <footer className="mx-1 p-1 mb-1 rounded border">
       <div className="container-lg">
         <div className="row py-5">
           <div className="col-lg-3 col-md-12 pb-5">

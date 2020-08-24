@@ -37,7 +37,7 @@ const Form = () => {
     return(
         
         <form ref={form} onSubmit={submit} className="w-100" >
-            <label htmlFor="newslatter" className="form-text text-dark mb-4">Al ingresar tu correo electrónico, aceptas recibir correos electrónicos de marketing por parte de <span className="text-primary">dovlius</span>.</label>
+            <label htmlFor="newslatter" className="form-text text-dark mb-4">Registrate para recibir consejos y noticias de <span className="text-primary">dovlius</span> que ayudaran a tu negocio.</label>
             <div className="form-group d-flex">
                 <input type="email" name="email" id="newslatter" className="form-control mr-2" placeholder="mi.correo@example.com" required />
                 <button type="submit" className="btn btn-primary rounded">

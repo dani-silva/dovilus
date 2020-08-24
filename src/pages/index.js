@@ -152,8 +152,8 @@ const IndexPage = () => {
           </div>
           <div className="col-12 col-md-1"></div>
           <div className="col-12 col-md-9">
-            {/* <h1 className="h2 mb-4">Soluciones digitales estratégicas.</h1> */}
-            <h1 className="h2 mb-4">Desarrollo de software y marketing.</h1>
+            {/* <small className="tag">Identificamos y creamos soluciones</small> */}
+            <h1 className="h2 mb-4">Desarrollo de software y marketing digital.</h1>
             <p className="mb-5">
               {/* Entendemos los desafios que pueden surgir en el proceso de desarrollo de tu proyecto...  */}
               La tecnología siempre está evolucionando, con nuevos softwares que emergen de diferentes problemas y situaciones que se van presentando dentro de las empresas. 
@@ -171,7 +171,7 @@ const IndexPage = () => {
             <div className="row mt-5 pt-5">
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.develop.childImageSharp.fixed} className="mb-3" alt="Software" />
-                <h5 className="mb-3">Solucion personalizada</h5>
+                <h2 className="mb-3 h5">Desarrollo web</h2>
                 <p>API's, CRM, servicios de terceros o cualquier proceso personalizado que necesites desarrollar en Javascript(React.js, Node.js, Mongo.js).</p>
                 <span className="mdi mdi-language-javascript mr-2"></span>
                 <span className="mdi mdi-language-html5 mr-2"></span>
@@ -181,42 +181,42 @@ const IndexPage = () => {
               </div>
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.website.childImageSharp.fixed} className="mb-3" alt="Página Web" />
-                <h5 className="mb-3">Página Web</h5>
+                <h2 className="mb-3 h5">Página Web</h2>
                 <p>Es el primer paso, tu negocio necesita presencia en linea, mostrar lo que ofreces y ganar la confianza de los compradores.</p>
               </div>
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.ecommerce.childImageSharp.fixed} className="mb-3" alt="Tienda" />
-                <h5 className="mb-3">Tienda en Linea</h5>
+                <h2 className="mb-3 h5">Tienda en linea</h2>
                 <p>Porque te detienes con una página web, si puedes tener todo el proceso de venta en linea, con diferentes métodos de pago y automatizado.</p>
               </div>
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.mobile.childImageSharp.fixed} className="mb-3" alt="Aplicación" />
-                <h5 className="mb-3">Aplicaciones</h5>
+                <h2 className="mb-3 h5">Aplicacion móvil</h2>
                 <p>Si tu negocio necesita estar en el celular de tu cliente, invierte en la aplicación móvil: PWA, IO's o de Android.</p>
               </div>
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.email.childImageSharp.fixed} className="mb-3" alt="Correo" />
-                <h5 className="mb-3">Correo electrónico</h5>
+                <h2 className="mb-3 h5">Correo electrónico</h2>
                 <p>Es uno de los medios de contacto mas usados, cambialo por uno con el nombre de tu empresa, es mas profesional y diferenciador.</p>
               </div>
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.server.childImageSharp.fixed} className="mb-3" alt="Hosting" />
-                <h5 className="mb-3">Hosting y Dominio</h5>
+                <h2 className="mb-3 h5">Hosting y Dominio</h2>
                 <p>Tener un dominio sencillo y fácil de recordar, y ademas un servidor estable y que te de la seguridad de estar siempre en linea.</p>
               </div>
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.ssl.childImageSharp.fixed} className="mb-3" alt="SSL" />
-                <h5 className="mb-3">Certificado SSL</h5>
+                <h2 className="mb-3 h5">Certificado SSL</h2>
                 <p>La seguridad en Internet es muy importante, tómala con seriedad, tus clientes te lo agradecerán y tu sitio estará protegido.</p>
               </div>
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.design.childImageSharp.fixed} className="mb-3" alt="Diseño" />
-                <h5 className="mb-3">Diseño UI/UX</h5>
+                <h2 className="mb-3 h5">Diseño UI/UX</h2>
                 <p>Tu sitio o aplicación no deben ser un laberinto para tus clientes, todo debe estar organizado y fácil de encontrar.</p>
               </div>
               <div className="col-12 col-md-4 col-sm-6 py-3 py-md-5">
                 <Img fixed={data.marketing.childImageSharp.fixed} className="mb-3" alt="Marketing" />
-                <h5 className="mb-3">Marketing digital</h5>
+                <h2 className="mb-3 h5">Marketing digital</h2>
                 <p>Olvídate de los folletos y costosos e ineficaces anuncios publicitarios, llega directo a los compradores de manera digital y mas barato.</p>
               </div>
             </div>

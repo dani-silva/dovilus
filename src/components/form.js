@@ -139,13 +139,13 @@ const Form = ({defaultEmail}) => {
         },
         {
             id: "develops",
-            name: "Solucion personalizada",
+            name: "Desarrollo web",
             image: data.develop.childImageSharp.fixed
         
         },
         {
             id: "app",
-            name: "Aplicación Web",
+            name: "Aplicación móvil",
             image: data.mobile.childImageSharp.fixed
         
         },

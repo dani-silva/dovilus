@@ -85,7 +85,7 @@ const Slider = () => {
       body: <>
         <h6 className="tag text-light">Automatiza procesos</h6>
         <h2 className="h2 text-white mb-4">Supera los retos del mundo con herramientas digitales que mejoran resultados.</h2>
-        <p className="text-light w-75 d-none d-md-block">La innovación tecnologia y la mejora continua le daran la energia a tu negocio para seguir adelante y creciendo.</p>
+        <p className="text-light w-75 d-none d-md-block">La innovación tecnologia y la mejora continua le daran el impulso a tu negocio para seguir adelante y creciendo.</p>
         <Link to="/cotizar" className="btn btn-primary mt-4" >Me interesa un proyecto <span className="mdi mdi-arrow-right ml-2"></span></Link>
       </>,
       image: data.renovation.childImageSharp
