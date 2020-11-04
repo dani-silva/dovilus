@@ -37,7 +37,7 @@ const Form = () => {
     return(
         
         <form ref={form} onSubmit={submit} className="w-100" >
-            <label htmlFor="newslatter" className="form-text text-dark mb-4">Registrate para recibir consejos y noticias de <span className="text-primary">dovlius</span> que ayudaran a tu negocio.</label>
+            {/* <label htmlFor="newslatter" className="form-text text-dark mb-4">Registrate para recibir consejos y noticias de <span className="text-primary">dovlius</span> que ayudaran a tu negocio.</label> */}
             <div className="form-group d-flex">
                 <input type="email" name="email" id="newslatter" className="form-control mr-2" placeholder="mi.correo@example.com" required />
                 <button type="submit" className="btn btn-primary rounded">
@@ -52,9 +52,9 @@ const Form = () => {
                 </button>
             </div>
             
-            <small className="small text-muted">Puedes cancelar la suscripción en cualquier momento. 
+            {/* <small className="small text-muted">Puedes cancelar la suscripción en cualquier momento.  */}
             {/* <Link to="/" className="text-dark">Lee nuestra Política de privacidad.</Link> */}
-            </small>
+            {/* </small> */}
         </form>
     )
 }

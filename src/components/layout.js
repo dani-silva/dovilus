@@ -13,10 +13,18 @@ const Layout = ({ children, afterHeader }) => {
           title,
           description,
           socialMedia {
+            linkedin,
             facebook,
             instagram,
-            pinterest,
+            behance,
             twitter
+          }
+        }
+      }
+      logo: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fixed(width: 30, height: 50, quality: 100) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -32,7 +40,7 @@ const Layout = ({ children, afterHeader }) => {
       
       <main>{children}</main>
 
-      <Footer metaData={data.site.siteMetadata} />
+      <Footer logo={data.logo} metaData={data.site.siteMetadata} />
     </>
   )
 }

@@ -6,9 +6,9 @@ import Img from 'gatsby-image'
 const Header = ({ siteTitle }) => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "logo.png" }) {
+      file(relativePath: { eq: "logotipo.png" }) {
         childImageSharp {
-          fixed(width: 30, height: 50, quality: 100) {
+          fixed(width: 88, height: 20, quality: 100) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -19,19 +19,19 @@ const Header = ({ siteTitle }) => {
   const [open, setOpen] =  React.useState(false)
 
   return(
-    <header className="sticky-top p-1" style={{background: "linear-gradient(0deg, rgba(255,255,255,.2), rgba(255,255,255,1))"}}>
-      <div className="d-flex align-items-center justify-content-between border bg-light rounded">
+    <header className="sticky-top bg-blur mb-1">
+      <div className="d-flex align-items-center justify-content-between border-bottom">
       <div className="container-lg d-flex align-items-center justify-content-between">
         <Link to="/" className="d-flex align-items-center brand">
           <Img fixed={data.file.childImageSharp.fixed} className="mr-2" alt={siteTitle} />
         </Link> 
         
         <nav className={`nav-responsive rounded d-md-flex flex-row align-items-center ml-auto ${open ? "d-sm-flex" : "d-none"}`}>
-          <button className="btn btn-primary rounded ml-auto mt-2 mr-2 d-md-none d-block" onClick={() => setOpen(false)}><i className="mdi mdi-window-close"> </i></button> 
+          <button className="btn btn-primary rounded-pill ml-auto mt-2 mr-2 d-md-none d-block" onClick={() => setOpen(false)}><i className="mdi mdi-window-close"> </i></button> 
           <ul className="nav">
             {/* <Link to="/" activeClassName="active" className="nav-link py-4">Inicio</Link> */}
             <li className="nav-item has-submenu">
-              <Link to="/pagina-web" activeClassName="active" className="nav-link py-4">Empieza <i className="mdi mdi-chevron-down"> </i></Link>
+              <Link to="" activeClassName="active" className="nav-link py-4">Servicios <i className="mdi mdi-chevron-down"> </i></Link>
               <ul className="submenu rounded border right shadow">
                 <div className="overflow-hidden rounded">
                   
@@ -271,9 +271,9 @@ const Header = ({ siteTitle }) => {
           </ul>
         </nav>
         
-        <span className={`bg-close d-md-block ${open ? "d-sm-block" : "d-none"}`}  onClick={() => setOpen(false)}></span>
-        <button className="btn btn-light rounded ml-auto my-3 d-md-none d-sm-block" onClick={() => setOpen(true)}><i className="mdi mdi-menu"> </i></button> 
-        <Link to="/cotizar" className="btn btn-outline-primary ml-3">
+        <span className={`bg-close bg-blur d-md-block ${open ? "d-sm-block" : "d-none"}`}  onClick={() => setOpen(false)}></span>
+        <button className="btn btn-light rounded-pill ml-auto my-3 d-md-none d-sm-block" onClick={() => setOpen(true)}><i className="mdi mdi-menu"> </i></button> 
+        <Link to="/cotizar" className="btn btn-primary rounded-pill ml-3">
           Contratanos
         </Link>
       </div>

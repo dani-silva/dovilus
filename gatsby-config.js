@@ -4,8 +4,9 @@ module.exports = {
     description: `Desarrollo de soluciones digitales estrategicas.`,
     socialMedia: {
       facebook: 'https://facebook.com/dovlius',
+      linkedin: 'https://linkedin.com/company/dovlius',
       instagram: 'https://instagram.com/dovlius',
-      pinterest: 'https://pinterest.com/dovlius',
+      behance: 'https://behance.com/dovlius',
       twitter: 'https://twitter.com/dovlius'
     },
     author: `@dovlius`,

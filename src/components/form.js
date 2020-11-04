@@ -150,7 +150,7 @@ const Form = ({defaultEmail}) => {
         
         },
         {
-            id: "email",
+            id: "email-pro",
             name: "Correo electrónico",
             image: data.email.childImageSharp.fixed
         
@@ -275,7 +275,7 @@ const Form = ({defaultEmail}) => {
                     </div>
                     <div className="form-group mb-5">
                         <label htmlFor="email" className="">Correo electrónico de contacto *</label>
-                        <input type="email" className={`form-control form-control-lg ${dataForm.emailError ? 'is-invalid' : null}`} id="email" name="email" placeholder="ejemplo@miempresa.com" defaultValue={defaultEmail} required />
+                        <input type="email" className={`form-control form-control-lg ${dataForm.emailError ? 'is-invalid' : null}`} id="email" name="email" placeholder="micorreo@mail.com" defaultValue={defaultEmail} required />
                         <div id="validationServer03Feedback" className="invalid-feedback">
                             Porfavor, introduce un correo electronico valido.
                         </div>
@@ -304,7 +304,7 @@ const Form = ({defaultEmail}) => {
                         {
                             complete.length == "loading"
                             ? "Enviando..."
-                            : "Completar"
+                            : "Enviar ahora"
                         }
                     </button>
                 </form>
